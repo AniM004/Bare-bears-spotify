@@ -1,3 +1,10 @@
 @use "../abstracts/functions";
 @use "../abstracts/mixins";
 @use "../abstracts/variables";
+@use "../base/fonts";
+
+p {
+  font-weight: 900;
+  font-size: 3rem;
+
+}

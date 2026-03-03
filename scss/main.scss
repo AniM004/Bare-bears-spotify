@@ -9,3 +9,8 @@
 @use "./layout/main-content";
 @use "./layout/player";
 @use "./layout/side-bar";
+@use "./base/fonts";
+
+*{
+     font-family: 'Satoshi-Variable';
+}
