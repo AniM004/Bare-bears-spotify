@@ -1,76 +1,27 @@
+@use "./abstracts/variables";
 @use "./abstracts/functions";
 @use "./abstracts/mixins";
-@use "./abstracts/variables";
+
 @use "./base/reset";
-@use "./components/album_card";
-@use "./components/artist_card";
-@use "./components/buttons";
+@use "./base/fonts";
+
+@use "./layout/layout";
+@use "./layout/side-bar";
 @use "./layout/header";
 @use "./layout/main-content";
 @use "./layout/player";
-@use "./layout/side-bar";
-@use "./base/fonts";
 
-* {
-  font-family: "Satoshi-Variable";
-}
+@use "./components/buttons";
+@use "./components/filters";
+@use "./components/album_card";
+@use "./components/artist_card";
 
-.left-sidebar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 248px;
-  padding: 25px 20px;
-  display: flex;
-  flex-direction: column;
-  overflow-x: hidden;
-  transition: 0.3s ease;
-}
-
-.left-sidebar h2 {
-  display: flex;
-  align-items: center;
-  gap: 11px 15px;
-  font-size: 14px;
-  font-weight: 400;
-  color: rgba(137, 137, 137, 1);
-  padding: 10px;
-}
-
-.left-sidebar-links {
-  list-style: none;
-  margin-top: 15px;
-  height: 80%;
-  width: 248px;
-}
-
-.left-sidebar-links li a {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  color: rgba(137, 137, 137, 1);
-  font-size: 14px;
-  font-weight: 400;
-  padding: 11px;
-  white-space: nowrap;
-  text-decoration: none;
-}
-.left-sidebar h2:hover,
-.left-sidebar-links li a:hover {
-  background: rgba(224, 224, 224, 1);
-  color: rgb(6, 6, 6);
-  border-radius: 8px;
-  cursor: pointer;
-}
-
-.left-sidebar-links li a img {
-  width: 19px;
-}
-
-.arrow-spins {
-  padding-left: 110px;
-}
-.arrow-keyboard {
-  padding-left: 95px;
-}
+@use "./pages/discover";
+@use "./pages/song";
+@use "./pages/artist";
+@use "./pages/search";
+@use "./pages/album";
+@use "./pages/playlist";
+@use "./pages/podcast";
+@use "./pages/episode";
+@use "./pages/library";

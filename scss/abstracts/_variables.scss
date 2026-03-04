@@ -1,19 +1,17 @@
+/* Color Palette */
+$color-primary: #1ED760;
 
+$color-bg-base: #121212;
+$color-bg-sidebar: #000000;
+$color-bg-player: #181818;
+$color-bg-chip: rgba(32, 32, 32, 0.5);
+$color-bg-chip-active: #E0E0E0;
 
-$primary-color: #1ED760;
-$secondary-color:#898989;
-$box-bg-color:#111111;
+$color-text-primary: #FFFFFF;
+$color-text-secondary: #898989;
+$color-text-tertiary: #323232;
+$color-text-chip-active: #111111;
 
-$bg-dark:#060606;
-$bg-light:#F0F0F0;
-
-$spacing-sm: 1.1rem;
-
-// discover-both, main content border radius, bottom player radius both, 
-$mid-radius: 1rem;
-
-// desktop
-$album-radius-desktop: 0.725rem;
-
-// mobile 
-$album-radius-mobile:0.6rem;
+/* Typography */
+$font-family-base: 'Satoshi-Variable', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+$font-family-italic: 'Satoshi-VariableItalic', $font-family-base;

@@ -27,43 +27,88 @@ ol {
   list-style: none;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+}
+
 @font-face {
   font-family: "Satoshi-VariableItalic";
-  src: url("../../assets/fonts/Satoshi-VariableItalic.woff2") format("woff2"), url("../../assets/fonts/Satoshi-VariableItalic.woff") format("woff");
+  src: url("../assets/fonts/Satoshi-VariableItalic.woff2") format("woff2"), url("../assets/fonts/Satoshi-VariableItalic.woff") format("woff");
   font-weight: 300 900;
   font-display: swap;
   font-style: italic;
 }
 @font-face {
   font-family: "Satoshi-Variable";
-  src: url("../../assets/fonts/Satoshi-Variable.woff2") format("woff2"), url("../../assets/fonts/Satoshi-Variable.woff") format("woff");
+  src: url("../assets/fonts/Satoshi-Variable.woff2") format("woff2"), url("../assets/fonts/Satoshi-Variable.woff") format("woff");
   font-weight: 300 900;
   font-display: swap;
   font-style: normal;
 }
-p {
-  font-weight: 900;
-  font-size: 3rem;
+/* Page Layout */
+body {
+  display: grid;
+  grid-template-columns: 24rem 1fr;
+  grid-template-rows: 6.4rem 1fr 7.2rem;
+  grid-template-areas: "sidebar header" "sidebar main" "player  player";
+  min-height: 100vh;
+  background-color: #121212;
+  color: #FFFFFF;
+  font-family: "Satoshi-Variable", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  overflow-x: hidden;
 }
 
-* {
-  font-family: "Satoshi-Variable";
+/* Sidebar Zone */
+.sidebar {
+  grid-area: sidebar;
+  background-color: #000000;
+  overflow-y: auto;
+  padding: 0.8rem;
 }
 
-.left-sidebar {
+/* Header Zone */
+.top-header {
+  grid-area: header;
+  background-color: #121212;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 3.2rem;
+}
+
+/* Main Content Zone */
+.main-content {
+  grid-area: main;
+  background-color: #121212;
+  overflow-y: auto;
+  padding: 2.4rem;
+}
+
+/* Player Bar Zone */
+.player-bar {
+  grid-area: player;
+  background-color: #181818;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.6rem;
+}
+
+.sidebar {
   position: fixed;
   top: 0;
   left: 0;
   height: 100%;
   width: 248px;
   padding: 25px 20px;
+  padding-bottom: 7.2rem;
   display: flex;
   flex-direction: column;
   overflow-x: hidden;
   transition: 0.3s ease;
 }
-
-.left-sidebar h2 {
+.sidebar h2 {
   display: flex;
   align-items: center;
   gap: 11px 15px;
@@ -73,14 +118,13 @@ p {
   padding: 10px;
 }
 
-.left-sidebar-links {
+.sidebar-links {
   list-style: none;
   margin-top: 15px;
   height: 80%;
   width: 248px;
 }
-
-.left-sidebar-links li a {
+.sidebar-links li a {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -91,17 +135,16 @@ p {
   white-space: nowrap;
   text-decoration: none;
 }
+.sidebar-links li a img {
+  width: 19px;
+}
 
-.left-sidebar h2:hover,
-.left-sidebar-links li a:hover {
+.sidebar h2:hover,
+.sidebar-links li a:hover {
   background: rgb(224, 224, 224);
   color: rgb(6, 6, 6);
   border-radius: 8px;
   cursor: pointer;
-}
-
-.left-sidebar-links li a img {
-  width: 19px;
 }
 
 .arrow-spins {

@@ -1,7 +1,65 @@
-@use "../abstracts/functions";
-@use "../abstracts/mixins";
 @use "../abstracts/variables";
-@use "../components/album_card";
-@use "../components/artist_card";
-@use "../components/buttons";
-@use "../base/fonts";
+@use "../abstracts/mixins";
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 248px;
+  padding: 25px 20px;
+  padding-bottom: 7.2rem;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  transition: 0.3s ease;
+
+  h2 {
+    display: flex;
+    align-items: center;
+    gap: 11px 15px;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(137, 137, 137, 1);
+    padding: 10px;
+  }
+}
+
+.sidebar-links {
+  list-style: none;
+  margin-top: 15px;
+  height: 80%;
+  width: 248px;
+
+  li a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: rgba(137, 137, 137, 1);
+    font-size: 14px;
+    font-weight: 400;
+    padding: 11px;
+    white-space: nowrap;
+    text-decoration: none;
+
+    img {
+      width: 19px;
+    }
+  }
+}
+
+.sidebar h2:hover,
+.sidebar-links li a:hover {
+  background: rgba(224, 224, 224, 1);
+  color: rgb(6, 6, 6);
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.arrow-spins {
+  padding-left: 110px;
+}
+
+.arrow-keyboard {
+  padding-left: 95px;
+}
