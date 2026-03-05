@@ -1,5 +1,5 @@
-@use "../abstracts/variables" as *;
-@use "../abstracts/mixins" as *;
+@use "../abstracts/variables";
+@use "../abstracts/mixins";
 
 * {
   padding: 0;
@@ -10,6 +10,9 @@
 html {
   font-size: 62.5%;
 }
+
+// main-content
+// grid-structure
 
 .main-content-playlist {
   background-image: linear-gradient(180deg, #3b50b6f3, #060606);
@@ -29,6 +32,7 @@ html {
   min-height: 100vh;
   padding: 2.2rem 5rem 0rem 2.5rem;
 
+  // header-section
   h1 {
     color: #fff;
     font-weight: 700;
@@ -46,7 +50,7 @@ html {
       display: flex;
       align-items: center;
       gap: 1rem;
-      color: #898989;
+      color: variables.$color-text-secondary;
 
       font-size: 1.4rem;
       font-weight: 500;
@@ -60,53 +64,57 @@ html {
   .header-actions {
     display: flex;
     justify-content: space-between;
-    gap: 1.4rem;
+
+    &-left {
+      display: flex;
+      align-items: center;
+      gap: 1.4rem;
+    }
   }
 
   .dot {
     height: 0.3rem;
     width: 0.3rem;
     border-radius: 100%;
-    background-color: #898989;
+    background-color: variables.$color-text-secondary;
   }
 
+  // list-title-section
   .divider {
     grid-area: title;
     display: grid;
     grid-template-columns: 1fr 7.5fr 7.5fr 1.6fr 7.5fr;
-    color: #898989;
+    color: variables.$color-text-secondary;
     font-size: 1.4rem;
     font-weight: 400;
     column-gap: 1rem;
-    border-bottom: 2px solid #898989;
+    border-bottom: 2px solid variables.$color-text-secondary;
   }
 
+  // playlist-grid
   .playlist-container {
-    // position: relative;
     grid-area: list;
     display: grid;
-    grid-template-columns: 1fr 8fr 8fr 1.6fr 7.5fr;
-    // grid-row: 6.7rem;
-    // grid-template-rows: repeat(10, 1fr);
-    // grid-template-columns: 4rem 30rem 30rem 7rem 4rem;
+    grid-template-columns: 1fr 8fr 8fr 2fr 7fr;
+
     column-gap: 1rem;
     align-items: center;
-
-    // border-top: 2px solid #898989;
-
-    //  grid-template-columns: repeat( auto-fit, minmax(12rem, 1fr));
-    // grid-template-rows: repeat( auto-fit, minmax(3rem, 1fr));
-    // grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
   }
 
+  // numbers-column
   .list {
     font-size: 1.6rem;
-    color: #898989;
+    color: variables.$color-text-secondary;
     font-weight: 500;
     height: 6.5rem;
     align-content: center;
   }
 
+
+
+
+
+  // song-titles-colums
   .text-wrapper {
     display: flex;
     flex-direction: column;
@@ -133,7 +141,7 @@ html {
   .artist-title {
     font-size: 1.4rem;
     font-weight: 400;
-    color: #898989;
+    color: variables.$color-text-secondary;
   }
 
   .album-name,
@@ -143,8 +151,11 @@ html {
     font-weight: 400;
   }
 
+
+  
+  // right-part album-cover-section
+
   .album-cover {
-    // width: min( 32rem, 40%);
     grid-area: album;
     display: flex;
     flex-direction: column;
@@ -156,7 +167,7 @@ html {
     display: flex;
     gap: 1rem;
     flex-wrap: wrap;
-    color: #898989;
+    color: variables.$color-text-secondary;
   }
 
   .genre {
@@ -178,7 +189,7 @@ html {
   .artist {
     display: flex;
     align-items: center;
-    color: #898989;
+    color: variables.$color-text-secondary;
     font-size: 1.6rem;
     font-weight: 500;
     gap: 2rem;
