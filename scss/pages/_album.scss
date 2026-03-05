@@ -1,5 +1,5 @@
-@use "../abstracts/variables" as *;
-@use "../abstracts/mixins" as *;
+@use "../abstracts/variables";
+@use "../abstracts/mixins";
 
 * {
   padding: 0;
@@ -11,16 +11,17 @@ html {
   font-size: 62.5%;
 }
 
-main {
+// background
+.album-page {
   background-image: linear-gradient(180deg, #333842, #060606);
+  border-radius: 1rem;
 }
 
+// main grid structure
 .main-container-album {
-  //   background-image: linear-gradient(180deg, #333842, #060606);
-
   display: grid;
   grid-template-columns: 1fr 32rem;
-  // grid-template-columns: 3fr 1fr;
+
   grid-template-rows: 4.4fr 3rem 16fr;
   column-gap: 3.5rem;
   row-gap: 2rem;
@@ -30,14 +31,13 @@ main {
     "title  album"
     "list  album ";
 
-  // height: calc(100vh - 5.4rem) ;
   min-height: 100vh;
   padding: 2.2rem 5rem 0rem 2.5rem;
 
+  // header
   h1 {
     color: #fff;
-    font-weight: 700;
-    font-size: 3.6rem;
+    @include mixins.page-title-font;
   }
 
   .header {
@@ -51,10 +51,8 @@ main {
       display: flex;
       align-items: center;
       gap: 1rem;
-      color: #898989;
-
-      font-size: 1.4rem;
-      font-weight: 500;
+      color: variables.$color-text-secondary;
+      @include mixins.small-font;
     }
   }
 
@@ -62,9 +60,15 @@ main {
     color: #fff;
   }
 
+  // header actions buttons
   .header-actions {
     display: flex;
     justify-content: space-between;
+  }
+
+  .header-actions-left {
+    display: flex;
+    align-items: center;
     gap: 1.4rem;
   }
 
@@ -72,43 +76,37 @@ main {
     height: 0.3rem;
     width: 0.3rem;
     border-radius: 100%;
-    background-color: #898989;
+    background-color: variables.$color-text-secondary;
   }
 
+  // playlist titles section
   .divider {
+    @include mixins.small-font;
     grid-area: title;
     display: grid;
     grid-template-columns: 1fr 7.5fr 1.6fr 7.5fr;
     color: #898989;
-    font-size: 1.4rem;
-    font-weight: 400;
+
     column-gap: 1rem;
-    border-bottom: 2px solid #898989;
+    border-bottom: 2px solid variables.$color-text-secondary;
   }
 
+  //  songs list
+  // grid structure
   .playlist-container {
-    // position: relative;
     grid-area: list;
     display: grid;
     grid-template-columns: 1fr 7.5fr 1.6fr 7.5fr;
-    // grid-row: 6.7rem;
-    // grid-template-rows: repeat(10, 1fr);
-    // grid-template-columns: 4rem 30rem 30rem 7rem 4rem;
+
     column-gap: 1rem;
     row-gap: 0.5rem;
     align-items: center;
-
-    // border-top: 2px solid #898989;
-
-    //  grid-template-columns: repeat( auto-fit, minmax(12rem, 1fr));
-    // grid-template-rows: repeat( auto-fit, minmax(3rem, 1fr));
-    // grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
   }
 
   .list {
-    font-size: 1.6rem;
-    color: #898989;
-    font-weight: 500;
+    @include mixins.mid-font;
+    color: variables.$color-text-secondary;
+
     height: 6.5rem;
     align-content: center;
   }
@@ -120,26 +118,24 @@ main {
   }
 
   .song-title {
-    font-size: 1.6rem;
-    font-weight: 500;
+    @include mixins.mid-font;
     color: #fff;
   }
 
   .artist-title {
-    font-size: 1.4rem;
-    font-weight: 400;
-    color: #898989;
+    @include mixins.small-font;
+    color: variables.$color-text-secondary;
   }
 
+  // main-right-column
+  //  album section
   .album-name,
   .duration {
-    font-size: 1.6rem;
-    color: #898989;
-    font-weight: 400;
+    @include mixins.small-font;
+    color: variables.$color-text-secondary;
   }
 
   .album-cover {
-    // width: min( 32rem, 40%);
     grid-area: album;
     display: flex;
     flex-direction: column;
@@ -151,16 +147,15 @@ main {
     display: flex;
     gap: 1rem;
     flex-wrap: wrap;
-    color: #898989;
+    color: variables.$color-text-secondary;
   }
 
   .genre {
-    font-size: 1.4rem;
-    font-weight: 400;
+    @include mixins.small-font;
     padding: 1rem 2rem;
 
     border-radius: 4rem;
-    border: 2px solid #89898940;
+    border: 2px solid variables.$color-text-secondary;
   }
 
   .artists-wrapper {
@@ -173,10 +168,9 @@ main {
   .artist {
     display: flex;
     align-items: center;
-    color: #898989;
-    font-size: 1.6rem;
-    font-weight: 500;
+    color: variables.$color-text-secondary;
     gap: 2rem;
+    @include mixins.mid-font;
 
     img {
       width: 6.1rem;

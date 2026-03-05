@@ -167,8 +167,9 @@ html {
   font-size: 62.5%;
 }
 
-main {
+.album-page {
   background-image: linear-gradient(180deg, #333842, #060606);
+  border-radius: 1rem;
 }
 
 .main-container-album {
@@ -199,7 +200,7 @@ main {
   gap: 1rem;
   color: #898989;
   font-size: 1.4rem;
-  font-weight: 500;
+  font-weight: 400;
 }
 .main-container-album .highlight {
   color: #fff;
@@ -207,6 +208,10 @@ main {
 .main-container-album .header-actions {
   display: flex;
   justify-content: space-between;
+}
+.main-container-album .header-actions-left {
+  display: flex;
+  align-items: center;
   gap: 1.4rem;
 }
 .main-container-album .dot {
@@ -216,12 +221,12 @@ main {
   background-color: #898989;
 }
 .main-container-album .divider {
+  font-size: 1.4rem;
+  font-weight: 400;
   grid-area: title;
   display: grid;
   grid-template-columns: 1fr 7.5fr 1.6fr 7.5fr;
   color: #898989;
-  font-size: 1.4rem;
-  font-weight: 400;
   column-gap: 1rem;
   border-bottom: 2px solid #898989;
 }
@@ -235,8 +240,8 @@ main {
 }
 .main-container-album .list {
   font-size: 1.6rem;
-  color: #898989;
   font-weight: 500;
+  color: #898989;
   height: 6.5rem;
   align-content: center;
 }
@@ -257,9 +262,9 @@ main {
 }
 .main-container-album .album-name,
 .main-container-album .duration {
-  font-size: 1.6rem;
-  color: #898989;
+  font-size: 1.4rem;
   font-weight: 400;
+  color: #898989;
 }
 .main-container-album .album-cover {
   grid-area: album;
@@ -278,7 +283,7 @@ main {
   font-weight: 400;
   padding: 1rem 2rem;
   border-radius: 4rem;
-  border: 2px solid rgba(137, 137, 137, 0.2509803922);
+  border: 2px solid #898989;
 }
 .main-container-album .artists-wrapper {
   display: flex;
@@ -289,9 +294,9 @@ main {
   display: flex;
   align-items: center;
   color: #898989;
+  gap: 2rem;
   font-size: 1.6rem;
   font-weight: 500;
-  gap: 2rem;
 }
 .main-container-album .artist img {
   width: 6.1rem;
@@ -316,6 +321,7 @@ html {
   grid-template-rows: 4.4fr 3rem 16fr;
   column-gap: 3.5rem;
   row-gap: 2rem;
+  border-radius: 1rem;
   grid-template-areas: "menu  album " "title  album" "list  album ";
   min-height: 100vh;
   padding: 2.2rem 5rem 0rem 2.5rem;
@@ -338,7 +344,7 @@ html {
   gap: 1rem;
   color: #898989;
   font-size: 1.4rem;
-  font-weight: 500;
+  font-weight: 400;
 }
 .main-content-playlist .highlight {
   color: #fff;
@@ -377,8 +383,8 @@ html {
 }
 .main-content-playlist .list {
   font-size: 1.6rem;
-  color: #898989;
   font-weight: 500;
+  color: #898989;
   height: 6.5rem;
   align-content: center;
 }
@@ -409,9 +415,9 @@ html {
 }
 .main-content-playlist .album-name,
 .main-content-playlist .duration {
-  font-size: 1.6rem;
-  color: #898989;
+  font-size: 1.4rem;
   font-weight: 400;
+  color: #898989;
 }
 .main-content-playlist .album-cover {
   grid-area: album;
