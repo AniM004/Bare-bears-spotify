@@ -13,7 +13,12 @@ html {
 
 // background
 .album-page {
-  background-image: linear-gradient(180deg, #333842, #060606);
+  background-image: linear-gradient(
+    180deg,
+    rgba(51, 56, 66, 0.47) 0%,
+    rgba(6, 6, 6, 0.47) 100%
+  );
+
   border-radius: 1rem;
 }
 

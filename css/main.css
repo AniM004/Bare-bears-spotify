@@ -168,7 +168,7 @@ html {
 }
 
 .album-page {
-  background-image: linear-gradient(180deg, #333842, #060606);
+  background-image: linear-gradient(180deg, rgba(51, 56, 66, 0.47) 0%, rgba(6, 6, 6, 0.47) 100%);
   border-radius: 1rem;
 }
 
@@ -315,7 +315,7 @@ html {
 }
 
 .main-content-playlist {
-  background-image: linear-gradient(180deg, rgba(59, 80, 182, 0.9529411765), #060606);
+  background-image: linear-gradient(180deg, rgba(59, 79, 182, 0.47) 0%, rgba(6, 6, 6, 0.47) 100%);
   display: grid;
   grid-template-columns: 1fr 32rem;
   grid-template-rows: 4.4fr 3rem 16fr;
@@ -455,6 +455,120 @@ html {
   width: 6.1rem;
   height: 6.1rem;
   border-radius: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.main-content-podcast {
+  background-image: linear-gradient(180deg, rgba(165, 96, 42, 0.47) 0%, rgba(6, 6, 6, 0.47) 100%);
+  min-height: 100vh;
+  padding: 2.2rem 5rem 0rem 3.7rem;
+  border-radius: 1rem;
+  display: flex;
+  gap: 5.7rem;
+}
+.main-content-podcast .left {
+  flex: 3.2374;
+  display: flex;
+  flex-direction: column;
+  gap: 4.1rem;
+}
+.main-content-podcast .right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.main-content-podcast .header {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.main-content-podcast h1 {
+  font-weight: 700;
+  font-size: 3.6rem;
+}
+.main-content-podcast .author {
+  font-weight: 500;
+  font-size: 1.4rem;
+}
+.main-content-podcast .actions {
+  display: flex;
+  align-items: center;
+  gap: 1.4rem;
+}
+.main-content-podcast .actions-button {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #FFFFFF;
+  padding: 1rem 2rem;
+  border-radius: 4.4rem;
+  background-color: rgba(137, 137, 137, 0.2509803922);
+}
+.main-content-podcast .rating {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem 2rem;
+  border-radius: 4.4rem;
+  border: 2px solid rgba(137, 137, 137, 0.2509803922);
+}
+.main-content-podcast .darken {
+  color: #898989;
+}
+.main-content-podcast .episodes {
+  display: flex;
+  flex-direction: column;
+  gap: 1.7rem;
+}
+.main-content-podcast .episodes-actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.main-content-podcast .actions-adjust-buttons {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  color: #898989;
+}
+.main-content-podcast .actions-adjust-buttons input {
+  display: none;
+}
+.main-content-podcast #new {
+  display: flex;
+}
+.main-content-podcast .about {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.main-content-podcast .about h3 {
+  color: #e0e0e0;
+}
+.main-content-podcast .about-description {
+  color: #898989;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+.main-content-podcast .genres-section {
+  display: flex;
+  gap: 1rem;
+  justify-content: start;
+  color: #898989;
+}
+.main-content-podcast .genres {
+  padding: 1rem 2rem;
+  border-radius: 4.4rem;
+  border: 2px solid rgba(137, 137, 137, 0.2509803922);
 }
 
 /*# sourceMappingURL=main.css.map */

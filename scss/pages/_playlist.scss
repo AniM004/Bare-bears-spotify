@@ -15,7 +15,12 @@ html {
 // grid-structure
 
 .main-content-playlist {
-  background-image: linear-gradient(180deg, #3b50b6f3, #060606);
+  background-image: linear-gradient(
+    180deg,
+    rgba(59, 79, 182, 0.47) 0%,
+    rgba(6, 6, 6, 0.47) 100%
+  );
+
   display: grid;
   grid-template-columns: 1fr 32rem;
   // grid-template-columns: 3fr 1fr;

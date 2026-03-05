@@ -7,18 +7,91 @@
     <title>Spotify - Podcast</title>
   </head>
   <body>
+    <aside class="sidebar"></aside>
 
-    <aside class="sidebar">
-    </aside>
+    <header class="top-header"></header>
 
-    <header class="top-header">
-    </header>
-
+    <!-- main structure flex  -->
     <main class="main-content">
+      <section class="main-content-podcast">
+        <!-- left section episodes  -->
+
+        <section class="left">
+          <!-- header(title ) -->
+
+          <section class="header">
+            <h1>The Joe Rogan Experience</h1>
+            <p class="author">Joe Rogan</p>
+
+            <!-- actions  -->
+            <div class="actions">
+              <input type="button" class="actions-button" value="Follow" />
+
+              <!-- rating wrapper  -->
+              <div class="rating">
+                <p>4.8</p>
+                <a href="#"
+                  ><img src="../assets/icons/Star icon.svg" alt="star icon"
+                /></a>
+                <p class="darken">816K</p>
+              </div>
+
+              <a href="#">
+                <img src="../assets/icons/dots-white.png" alt="" />
+              </a>
+            </div>
+          </section>
+          <!-- all episodes  -->
+          <section class="episodes">
+            <div class="episodes-actions">
+              <h3>All Episodes</h3>
+
+              <div class="actions-adjust-buttons">
+                <a href="#"
+                  ><img
+                    src="../assets/icons/alignment.svg"
+                    alt="alligment icon"
+                  />
+                </a>
+                <p>New</p>
+                <a href="#">
+                  <img src="../assets/icons/piramid.png" alt="" />
+                </a>
+                <p>All Episodes</p>
+                <input type="search" class="search" />
+                <label for="search">
+                  <img src="../assets/icons/search-icon.svg" alt="" />
+                </label>
+              </div>
+            </div>
+
+            <div class="episodes-list"></div>
+          </section>
+        </section>
+        <!-- right section cover  -->
+        <section class="right">
+          <!-- episode cover img  -->
+          <img
+            src="../assets/images/Joe Rogan cover.png"
+            alt="Joe Rogan cover.png"
+          />
+
+          <!-- podcast info  -->
+          <div class="about">
+            <h3>About</h3>
+            <p class="about-description">
+              The official podcast of comedian Joe Rogan.
+            </p>
+          </div>
+          <div class="genres-section">
+            <p class="genres">Comedy</p>
+            <p class="genres">Culture</p>
+            <p class="genres">Society</p>
+          </div>
+        </section>
+      </section>
     </main>
 
-    <footer class="player-bar">
-    </footer>
-
+    <footer class="player-bar"></footer>
   </body>
 </html>

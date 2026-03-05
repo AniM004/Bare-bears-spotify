@@ -1,4 +1,4 @@
-@use "variables" as *;
+@use "variables" ;
 
 @mixin flex-between {
   display: flex;
@@ -19,4 +19,15 @@
 @mixin page-title-font {
   font-weight: 700;
   font-size: 3.6rem;
+}
+
+@mixin small-grey-box {
+  padding: 1rem 2rem;
+  border-radius: 4.4rem;
+  border: 2px solid #89898940;
+}
+
+%h3 {
+  font-size: 2rem;
+  font-weight: 700;
 }
