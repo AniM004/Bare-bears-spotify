@@ -468,6 +468,12 @@ h3 {
   font-weight: 700;
 }
 
+h4 {
+  font-weight: 500;
+  font-size: 1.8rem;
+  color: #e0e0e0;
+}
+
 .main-content-podcast {
   background-image: linear-gradient(180deg, rgba(165, 96, 42, 0.47) 0%, rgba(6, 6, 6, 0.47) 100%);
   min-height: 100vh;
@@ -534,6 +540,11 @@ h3 {
   justify-content: space-between;
   gap: 1rem;
 }
+.main-content-podcast .episode-description {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #898989;
+}
 .main-content-podcast .actions-adjust-buttons {
   display: flex;
   gap: 1rem;
@@ -545,6 +556,38 @@ h3 {
 }
 .main-content-podcast #new {
   display: flex;
+}
+.main-content-podcast .episodes-list-container {
+  display: flex;
+  gap: 1.8rem;
+  border-bottom: 2px solid rgba(137, 137, 137, 0.1490196078);
+}
+.main-content-podcast .list-container-texts {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.main-content-podcast .list-title-container {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.main-content-podcast .list-actions {
+  display: flex;
+  align-items: center;
+  gap: 1.4rem;
+}
+.main-content-podcast .episode-numbers {
+  display: flex;
+  gap: 1rem;
+  color: #898989;
+  align-items: center;
+}
+.main-content-podcast .dot-div {
+  width: 0.3rem;
+  height: 0.3rem;
+  border-radius: 100%;
+  background-color: #898989;
 }
 .main-content-podcast .about {
   display: flex;
