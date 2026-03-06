@@ -50,17 +50,21 @@ h4 {
   padding: 2.2rem 5rem 0rem 3.7rem;
   border-radius: 1rem;
   display: flex;
+  flex-shrink: 1;
   gap: 5.7rem;
 
   .left {
-    flex: 3.2374;
+    flex: 1 1 82%;
+    // flex-shrink: 1;
     display: flex;
     flex-direction: column;
     gap: 4.1rem;
+    overflow-x: hidden;
   }
 
   .right {
-    flex: 1;
+    flex: 1 1 18%;
+
     display: flex;
     flex-direction: column;
     gap: 3rem;
@@ -90,6 +94,7 @@ h4 {
       color: variables.$color-text-primary;
       padding: 1rem 2rem;
       border-radius: 4.4rem;
+      cursor: pointer;
 
       background-color: #89898940;
     }
@@ -118,16 +123,10 @@ h4 {
       gap: 1rem;
     }
     &-list {
-      
     }
   }
 
-  .episode-description{
-    @include mixins.small-font;
-    color: variables.$color-text-secondary;
-   
-  }
-
+ 
   .actions-adjust-buttons {
     display: flex;
     gap: 1rem;
@@ -148,14 +147,18 @@ h4 {
       display: flex;
       gap: 1.8rem;
       border-bottom: 2px solid #89898926;
+      padding: 2.1rem 0;
     }
   }
 
+  .list-cover {
+    width: 13rem;
+    height: 13rem;
+  }
   .list-container-texts {
     display: flex;
     flex-direction: column;
     gap: 2rem;
-
   }
 
   .list-title-container {
@@ -170,6 +173,12 @@ h4 {
     gap: 1.4rem;
   }
 
+  .button-hovers {
+    :hover {
+      filter: brightness(2) invert(0) contrast(4)
+        drop-shadow(0 0 1.5px variables.$color-primary);
+    }
+  }
   .episode-numbers {
     display: flex;
     gap: 1rem;
@@ -192,13 +201,39 @@ h4 {
     h3 {
       color: #e0e0e0;
     }
+  }
 
-    &-description {
-      color: variables.$color-text-secondary;
-      font-size: 1.6rem;
-      font-weight: 400;
+  .episode-description {
+    color: variables.$color-text-secondary;
+    font-size: 1.6rem;
+    font-weight: 400;
+    width: 100%;
+    min-width: 0;
+    overflow: hidden;
+
+    p {
+      // width: 900px;
+      // overflow: hidden;
+      white-space: nowrap;
+      display: inline-block;
+      margin: 0;
+      
+    }
+
+    p:hover {
+      animation: scrolling 13s linear infinite;
     }
   }
+
+  @keyframes scrolling {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
   // episode genres
 
   .genres-section {
@@ -211,4 +246,7 @@ h4 {
   .genres {
     @include mixins.small-grey-box;
   }
+
+
+  
 }
