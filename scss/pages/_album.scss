@@ -37,7 +37,7 @@ html {
     "list  album ";
 
   min-height: 100vh;
-  padding: 2.2rem 5rem 0rem 2.5rem;
+  padding: variables.$page-padding;
 
   // header
   h1 {
@@ -72,9 +72,7 @@ html {
   }
 
   .header-actions-left {
-    display: flex;
-    align-items: center;
-    gap: 1.4rem;
+      @extend %actions-container;
   }
 
   .dot {
