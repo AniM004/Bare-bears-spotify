@@ -1,34 +1,6 @@
 @use "../abstracts/variables";
 @use "../abstracts/mixins";
 
-//  main-structure-grid
-
-// .main-content-podcast {
-//   background-image: linear-gradient(
-//     180deg,
-//     rgba(165, 96, 42, 0.47) 0%,
-//     rgba(6, 6, 6, 0.47) 100%
-//   );
-//   min-height: 100vh;
-//   padding: 2.2rem 5rem 0rem 3.7rem;
-//   border-radius: 1rem;
-
-//   display: grid;
-//   grid-template-areas:
-//     "menu  album "
-//     "title  album"
-//     "list  album ";
-//   column-gap: 5.7rem;
-//   grid-template-rows: 1fr 4rem 4.8fr;
-// }
-
-// reset
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 h3 {
   font-size: 2rem;
   font-weight: 700;
@@ -47,7 +19,7 @@ h4 {
     rgba(6, 6, 6, 0.47) 100%
   );
   min-height: 100vh;
-  padding: 2.2rem 5rem 0rem 3.7rem;
+  padding: variables.$page-padding;
   border-radius: 1rem;
   display: flex;
   flex-shrink: 1;
@@ -85,9 +57,7 @@ h4 {
   }
 
   .actions {
-    display: flex;
-    align-items: center;
-    gap: 1.4rem;
+    @extend %actions-container;
 
     &-button {
       @include mixins.small-font;
@@ -126,7 +96,6 @@ h4 {
     }
   }
 
- 
   .actions-adjust-buttons {
     display: flex;
     gap: 1rem;
@@ -217,7 +186,6 @@ h4 {
       white-space: nowrap;
       display: inline-block;
       margin: 0;
-      
     }
 
     p:hover {
@@ -246,7 +214,4 @@ h4 {
   .genres {
     @include mixins.small-grey-box;
   }
-
-
-  
 }
