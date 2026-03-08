@@ -25,3 +25,12 @@
 @use "./pages/podcast";
 @use "./pages/episode";
 @use "./pages/library";
+
+@media (max-width: 768px) {
+  body {
+    display: contents;
+  }
+  .sidebar {
+    display: none;
+  }
+}
