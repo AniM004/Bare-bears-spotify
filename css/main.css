@@ -36,18 +36,14 @@ img {
 
 @font-face {
   font-family: "Satoshi-VariableItalic";
-  src:
-    url("../assets/fonts/Satoshi-VariableItalic.woff2") format("woff2"),
-    url("../assets/fonts/Satoshi-VariableItalic.woff") format("woff");
+  src: url("../assets/fonts/Satoshi-VariableItalic.woff2") format("woff2"), url("../assets/fonts/Satoshi-VariableItalic.woff") format("woff");
   font-weight: 300 900;
   font-display: swap;
   font-style: italic;
 }
 @font-face {
   font-family: "Satoshi-Variable";
-  src:
-    url("../assets/fonts/Satoshi-Variable.woff2") format("woff2"),
-    url("../assets/fonts/Satoshi-Variable.woff") format("woff");
+  src: url("../assets/fonts/Satoshi-Variable.woff2") format("woff2"), url("../assets/fonts/Satoshi-Variable.woff") format("woff");
   font-weight: 300 900;
   font-display: swap;
   font-style: normal;
@@ -60,14 +56,8 @@ body {
   grid-template-areas: "sidebar header" "sidebar main" "player  player";
   min-height: 100vh;
   background-color: #121212;
-  color: #ffffff;
-  font-family:
-    "Satoshi-Variable",
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    Roboto,
-    sans-serif;
+  color: #FFFFFF;
+  font-family: "Satoshi-Variable", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   overflow-x: hidden;
 }
 
@@ -330,11 +320,7 @@ html {
 }
 
 .album-page {
-  background-image: linear-gradient(
-    180deg,
-    rgba(51, 56, 66, 0.47) 0%,
-    rgba(6, 6, 6, 0.47) 100%
-  );
+  background-image: linear-gradient(180deg, rgba(51, 56, 66, 0.47) 0%, rgba(6, 6, 6, 0.47) 100%);
   border-radius: 1rem;
 }
 
@@ -481,11 +467,7 @@ html {
 }
 
 .main-content-playlist {
-  background-image: linear-gradient(
-    180deg,
-    rgba(59, 79, 182, 0.47) 0%,
-    rgba(6, 6, 6, 0.47) 100%
-  );
+  background-image: linear-gradient(180deg, rgba(59, 79, 182, 0.47) 0%, rgba(6, 6, 6, 0.47) 100%);
   display: grid;
   grid-template-columns: 1fr 32rem;
   grid-template-rows: 4.4fr 3rem 16fr;
@@ -500,6 +482,11 @@ html {
   color: #fff;
   font-weight: 700;
   font-size: 3.6rem;
+}
+.main-content-playlist .mobile-header,
+.main-content-playlist .mobile-playlist-cover-container,
+.main-content-playlist .mobile-left-actions {
+  display: none;
 }
 .main-content-playlist .header {
   grid-area: menu;
@@ -522,11 +509,20 @@ html {
 .main-content-playlist .header-actions {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .main-content-playlist .header-actions-left {
   display: flex;
+  gap: 1.4rem;
+}
+.main-content-playlist .actions-reverse,
+.main-content-playlist .mobile-none-actions {
+  display: flex;
   align-items: center;
   gap: 1.4rem;
+}
+.main-content-playlist .button-hovers :hover {
+  filter: brightness(2) invert(0) contrast(4) drop-shadow(0 0 1.5px #1ED760);
 }
 .main-content-playlist .dot {
   height: 0.3rem;
@@ -627,6 +623,77 @@ html {
   border-radius: 100%;
 }
 
+@media (max-width: 768px) {
+  .main-content-playlist {
+    display: flex;
+    flex-direction: column;
+    padding: 1.3rem 1.2rem 0rem 1.5rem;
+  }
+  .main-content-playlist h1 {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  .main-content-playlist .big-cover {
+    width: 21.1rem;
+  }
+  .main-content-playlist .playlist-container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1.6rem;
+  }
+  .main-content-playlist .list,
+  .main-content-playlist .duration,
+  .main-content-playlist .favourite-icon,
+  .main-content-playlist .album-name,
+  .main-content-playlist .mobile-none-actions,
+  .main-content-playlist .header-actions-right,
+  .main-content-playlist .divider,
+  .main-content-playlist .album-cover {
+    display: none;
+  }
+  .main-content-playlist .actions-reverse {
+    flex-direction: row-reverse;
+  }
+  .main-content-playlist .mobile-left-actions {
+    display: flex;
+    align-items: center;
+    gap: 1.4rem;
+  }
+  .main-content-playlist .header-actions-left {
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+  }
+  .main-content-playlist .mobile-header {
+    display: flex;
+    gap: 1.7rem;
+    justify-content: center;
+  }
+  .main-content-playlist .header {
+    justify-content: center;
+  }
+  .main-content-playlist .mobile-search {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(224, 224, 224, 0.0392156863);
+    border-radius: 1.5rem;
+    width: calc(100vw - 5rem);
+    font-size: 1.4rem;
+  }
+  .main-content-playlist .mobile-search #mobile-search {
+    padding: 0.9rem;
+  }
+  .main-content-playlist .mobile-playlist-cover {
+    width: min(21.1rem, 60%);
+  }
+  .main-content-playlist .mobile-playlist-cover-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -645,11 +712,7 @@ h4 {
 }
 
 .main-content-podcast {
-  background-image: linear-gradient(
-    180deg,
-    rgba(165, 96, 42, 0.47) 0%,
-    rgba(6, 6, 6, 0.47) 100%
-  );
+  background-image: linear-gradient(180deg, rgba(165, 96, 42, 0.47) 0%, rgba(6, 6, 6, 0.47) 100%);
   min-height: 100vh;
   padding: 2.2rem 5rem 0rem 3.7rem;
   border-radius: 1rem;
@@ -691,7 +754,7 @@ h4 {
 .main-content-podcast .actions-button {
   font-size: 1.4rem;
   font-weight: 400;
-  color: #ffffff;
+  color: #FFFFFF;
   padding: 1rem 2rem;
   border-radius: 4.4rem;
   cursor: pointer;
@@ -755,7 +818,7 @@ h4 {
   gap: 1.4rem;
 }
 .main-content-podcast .button-hovers :hover {
-  filter: brightness(2) invert(0) contrast(4) drop-shadow(0 0 1.5px #1ed760);
+  filter: brightness(2) invert(0) contrast(4) drop-shadow(0 0 1.5px #1ED760);
 }
 .main-content-podcast .episode-numbers {
   display: flex;
@@ -811,6 +874,15 @@ h4 {
   padding: 1rem 2rem;
   border-radius: 4.4rem;
   border: 2px solid rgba(137, 137, 137, 0.2509803922);
+}
+
+@media (max-width: 768px) {
+  body {
+    display: contents;
+  }
+  .sidebar {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

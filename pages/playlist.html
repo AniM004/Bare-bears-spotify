@@ -17,6 +17,29 @@
 
       <div class="main-content-playlist">
         <div class="header">
+          <div class="mobile-header">
+            <div class="mobile-search">
+              <input
+                type="search"
+                name=""
+                id="mobile-search"
+                placeholder="Search playlist"
+              />
+              <button type="submit">
+                <img src="../assets/icons/search-icon.svg" alt="" />
+              </button>
+            </div>
+
+            <img src="../assets/icons/alignment.svg" alt="" />
+          </div>
+          <div class="mobile-playlist-cover-container">
+            <img
+              src="../assets/images/daft-punk-cover.svg"
+              alt=""
+              class="mobile-playlist-cover"
+            />
+          </div>
+
           <h1>Daft Punk Mix</h1>
           <div class="header-info">
             <p>By <span class="highlight">Spotify</span></p>
@@ -27,28 +50,55 @@
           </div>
           <div class="header-actions">
             <div class="header-actions-left">
-              <a href="#">
-                <img src="../assets/icons/green-start-button.png" alt="" />
-              </a>
-              <a href="#">
-                <img src="../assets/icons/shuffle-icon.svg" alt="" />
-              </a>
-              <a href="#">
-                <img src="../assets/icons/+ icon.svg" alt="" />
-              </a>
-              <a href="#">
-                <img src="../assets/icons/unknown icon.png" alt="" />
-              </a>
-              <a href="#">
-                <img src="../assets/icons/download.svg" alt="" />
-              </a>
-              <a href="#">
-                <img src="../assets/icons/share.svg" alt="" />
-              </a>
-              <a href="#">
-                <img src="../assets/icons/dots-icon.svg" alt="" />
-              </a>
+              <!-- new actions for mobile left side  -->
+
+              <div class="mobile-left-actions">
+                <a href="#" class="button-hovers">
+                  <img src="../assets/icons/add album icon.svg" alt="" />
+                </a>
+                <a href="#" class="button-hovers">
+                  <img src="../assets/icons/unknown icon.png" alt="" />
+                </a>
+
+                <a href="#" class="button-hovers">
+                  <img src="../assets/icons/download.svg" alt="" />
+                </a>
+                <a href="#" class="button-hovers">
+                  <img src="../assets/icons/dots-icon.svg" alt="" />
+                </a>
+              </div>
+
+              <!-- green and shuffle  -->
+
+              <div class="actions-reverse">
+                <a href="#">
+                  <img src="../assets/icons/green-start-button.png" alt="" />
+                </a>
+                <a href="#" class="button-hovers">
+                  <img src="../assets/icons/shuffle-icon.svg" alt="" />
+                </a>
+              </div>
+
+              <div class="mobile-none-actions">
+                <!-- mid actions  -->
+                <a href="#" class="button-hovers">
+                  <img src="../assets/icons/+ icon.svg" alt="" />
+                </a>
+                <a href="#" class="button-hovers">
+                  <img src="../assets/icons/unknown icon.png" alt="" />
+                </a>
+                <a href="#" class="button-hovers">
+                  <img src="../assets/icons/download.svg" alt="" />
+                </a>
+                <a href="#" class="button-hovers">
+                  <img src="../assets/icons/share.svg" alt="" />
+                </a>
+                <a href="#" class="button-hovers">
+                  <img src="../assets/icons/dots-icon.svg" alt="" />
+                </a>
+              </div>
             </div>
+            <!-- search action right on desktop  -->
             <div class="header-actions-right">
               <a href="">
                 <img src="../assets/icons/search-icon.svg" alt="" />
@@ -182,7 +232,11 @@
 
         <!-- right grid section for artist -->
         <div class="album-cover">
-          <img src="../assets/images/daft-punk-cover.svg" alt="" />
+          <img
+            src="../assets/images/daft-punk-cover.svg"
+            alt=""
+            class="big-cover"
+          />
           <div class="genre-wrapper">
             <p class="genre">Funk</p>
             <p class="genre">Electronic music</p>
