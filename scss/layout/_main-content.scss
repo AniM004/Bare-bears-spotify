@@ -18,7 +18,7 @@
   filter: brightness(40%);
 }
 
-.main-content {
+.main-content-home {
   background-color: #060606;
   padding: 15px 33px 46px 25px;
   .top-nav {
@@ -347,8 +347,7 @@
       flex-wrap: nowrap;
       gap: 11px;
       img {
-        width: 170px;
-        height: 254px;
+        border-radius: 50%;
         &:hover {
           @include title-hover;
         }
