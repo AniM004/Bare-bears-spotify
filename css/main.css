@@ -491,6 +491,11 @@ html {
   font-weight: 700;
   font-size: 3.6rem;
 }
+.main-content-playlist .mobile-header,
+.main-content-playlist .mobile-playlist-cover-container,
+.main-content-playlist .mobile-left-actions {
+  display: none;
+}
 .main-content-playlist .header {
   grid-area: menu;
   display: flex;
@@ -512,6 +517,7 @@ html {
 .main-content-playlist .header-actions {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .main-content-playlist .dot {
   height: 0.3rem;
