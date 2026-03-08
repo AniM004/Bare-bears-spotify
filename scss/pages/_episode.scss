@@ -65,7 +65,20 @@
   }
 
   .episode-video {
+    background-image: url(../../assets/images/The\ Joe\ Rogan\ photo.png);
+    background-size: 100%;
+    background-position: center;
     width: min(96.9rem, 98%);
+    height: min(54.6rem, 47%);
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      width: min(7.2rem, 7.4%);
+      cursor: pointer;
+    }
   }
 
   // right section

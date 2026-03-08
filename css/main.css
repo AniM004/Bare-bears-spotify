@@ -823,7 +823,19 @@ h4 {
   filter: brightness(2) invert(0) contrast(4) drop-shadow(0 0 1.5px #1ED760);
 }
 .main-content-episode .episode-video {
+  background-image: url(../../assets/images/The\ Joe\ Rogan\ photo.png);
+  background-size: 100%;
+  background-position: center;
   width: min(96.9rem, 98%);
+  height: min(54.6rem, 47%);
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main-content-episode .episode-video img {
+  width: min(7.2rem, 7.4%);
+  cursor: pointer;
 }
 .main-content-episode .right-container {
   display: flex;
