@@ -1,2 +1,91 @@
-@use "../abstracts/variables";
-@use "../abstracts/mixins";
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.player-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2.1rem;
+
+  .player-left-container {
+    display: flex;
+    align-items: center;
+    gap: 2.6rem;
+
+    .player-controls {
+      width: 65.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+
+      .player-buttons {
+        display: flex;
+        align-items: center;
+        gap: 0.475rem;
+      }
+
+      .player-progress {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        width: 100%;
+        max-width: 39.6rem;
+
+        .progress-time {
+          color: $color-text-secondary;
+          font-size: 1.2rem;
+        }
+      
+        .progress-bar {
+          flex: 1;
+          height: 0.4rem;
+          background-color: $color-text-secondary;
+          border-radius: 0.2rem;
+          position: relative;
+        }
+      
+        .progress-bar-fill {
+          width: 42%;
+          height: 100%;
+          background-color: $color-text-primary;
+          border-radius: 0.2rem;
+        }
+      }
+    }
+
+    .player-info {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+
+      .player-text {
+        display: flex;
+        flex-direction: column;
+        font-size: 1.4rem;
+
+        .player-title {
+          color: $color-text-primary;
+        }
+
+        .player-artist,
+        .player-album {
+          color: $color-text-secondary;
+        }
+      }
+    }
+  }
+
+  .player-right-container {
+    width: 34.8rem;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+  }
+
+  .player-btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+  }
+}
