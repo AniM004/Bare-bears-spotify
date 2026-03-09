@@ -1,2 +1,93 @@
 @use "../abstracts/variables" as *;
 @use "../abstracts/mixins" as *;
+
+.main-content-artist-home {
+  .top-header-artist {
+    position: relative;
+    height: 426px;
+    background-image:
+      linear-gradient(to top, #070606, transparent),
+      url("../../assets/artist-section/header-artist.png");
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 20px;
+  }
+  .header-absolute {
+    position: absolute;
+    bottom: 50px;
+    left: 37px;
+    display: flex;
+    justify-content: stretch;
+    align-items: center;
+    gap: 900px;
+    .header-title {
+      margin: auto;
+      h1 {
+        font-size: 50px;
+        font-weight: 900;
+        color: rgb(224, 224, 224);
+        cursor: pointer;
+        &:hover {
+          filter: brightness(70%);
+        }
+      }
+      p {
+        font-size: 14px;
+        font-weight: 500;
+        cursor: pointer;
+        &:hover {
+          filter: brightness(70%);
+        }
+      }
+    }
+    ul {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-left: auto;
+      gap: 14px;
+      li a {
+        cursor: pointer;
+        &:hover {
+          filter: brightness(70%);
+        }
+      }
+      .follow a {
+        padding: 10px 20px;
+        letter-spacing: 3%;
+        border-radius: 44px;
+        background: rgba(137, 137, 137, 0.25);
+        &:hover {
+          background-color: rgb(252, 252, 252);
+          color: #000000;
+          filter: brightness(100%);
+        }
+      }
+    }
+  }
+  .section-header-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 60px;
+    margin-right: 570px;
+    li a {
+      padding: 0px 6px 20px 6px;
+      color: rgba(137, 137, 137, 1);
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 3%;
+    }
+    li:last-child a {
+      padding: 0px;
+      filter: saturate(50%);
+    }
+    li:last-child a:hover {
+      border-bottom: 0px;
+    }
+    li a:hover {
+      color: rgb(224, 224, 224);
+      border-bottom: 2px solid #1ed760;
+    }
+  }
+}
