@@ -4,12 +4,12 @@
 /* Page Layout */
 body {
   display: grid;
-  grid-template-columns: 24rem 1fr;
+  grid-template-columns: 273px 1fr;
   grid-template-rows: 6.4rem 1fr 7.2rem;
   grid-template-areas:
     "sidebar header"
     "sidebar main"
-    "player  player";
+    "sidebar  player";
   min-height: 100vh;
   background-color: $color-bg-base;
   color: $color-text-primary;
