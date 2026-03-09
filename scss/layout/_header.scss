@@ -1,2 +1,53 @@
-@use "../abstracts/variables";
-@use "../abstracts/mixins";
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.top-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .header-nav {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+
+    .header-nav-link {
+      width: 21rem;
+      height: 5rem;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding: 0rem 1.3rem;
+      border-radius: 1rem;
+      font-size: 1.4rem;
+      color: $color-text-secondary;
+      transition: 0.3s ease;
+
+      &:hover {
+        color: $color-text-primary;
+      }
+
+      &.active {
+        background-color: $color-bg-player;
+        color: $color-text-primary;
+      }
+    }
+  }
+
+  .header-actions {
+    display: flex;
+    align-items: center;
+    gap: 1.3rem;
+    margin-right: 0.3rem;
+
+    .header-btn {
+      background: none;
+      border: none;
+      cursor: pointer;
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+}

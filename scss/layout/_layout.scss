@@ -21,15 +21,12 @@ body {
 /* Sidebar Zone */
 .sidebar {
   grid-area: sidebar;
-  overflow-y: auto;
   padding: 0.8rem;
 }
 
 /* Header Zone */
 .top-header {
   grid-area: header;
-  @include flex-between;
-  padding: 0 3.2rem;
 }
 
 /* Main Content Zone */
