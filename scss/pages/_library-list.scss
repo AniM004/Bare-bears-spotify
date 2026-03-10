@@ -2,8 +2,6 @@
 @use "../abstracts/mixins";
 
 .main-container-library-list {
-  border-radius: 1rem;
-  border: 1px solid #202020;
   min-height: 100vh;
   padding: 1.2rem 2.76rem 0rem 2.5rem;
 
@@ -130,6 +128,7 @@
     display: none;
   }
 
+  
   .heart-label {
     background-image: url(../../assets/icons/heart-svg.svg);
     background-position: center;
@@ -178,4 +177,6 @@
     background-position: center;
     background-repeat: no-repeat;
   }
+
+
 }

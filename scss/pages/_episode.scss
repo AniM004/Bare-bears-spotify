@@ -101,4 +101,10 @@
       color: variables.$color-text-secondary;
     }
   }
+
+  .episode-about-link {
+    a:visited {
+      color:  #ff7101;
+    }
+  }
 }

@@ -4,8 +4,6 @@
 // library page styling
 
 .main-container-library {
-  border-radius: 1rem;
-  border: 1px solid #202020;
   min-height: 100vh;
   padding: variables.$page-padding;
 
@@ -20,7 +18,7 @@
 
   .library-nav-wrapper {
     justify-content: space-between;
-    
+
     margin-bottom: 3.1rem;
   }
 
