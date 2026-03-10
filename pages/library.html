@@ -7,9 +7,118 @@
     <title>Spotify - Library</title>
   </head>
   <body>
-    <aside class="sidebar"></aside>
+    <aside class="sidebar">
+    <h2 class="sidebar-title">
+      <img src="../assets/icons/library-icon.svg" alt="library" /> My Library
+    </h2>
+    <nav class="sidebar-nav">
+      <ul class="sidebar-links">
+        <li>
+          <a href="#">
+            <div class="sidebar-link-text">
+              <img src="../assets/icons/pins-icon.svg" alt="pins" />Pins
+            </div>
+            <div class="sidebar-link-arrow">
+              <img src="../assets/icons/arrow-right.svg" alt="arrow right" />
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="./playlist.html">
+            <div class="sidebar-link-text">
+              <img src="../assets/icons/playlist-icon.svg" alt="playlist" />Playlists
+            </div>
+            <div class="sidebar-link-arrow">
+              <img src="../assets/icons/arrow-right.svg" alt="arrow right" />
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <div class="sidebar-link-text">
+              <img src="../assets/icons/liked-songs-icon.svg" alt="liked songs" />Liked songs
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <div class="sidebar-link-text">
+              <img src="../assets/icons/saves-icon.svg" alt="saves" />Saves
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="./album.html">
+            <div class="sidebar-link-text">
+              <img src="../assets/icons/albums-icon.svg" alt="albums" />Albums
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <div class="sidebar-link-text">
+              <img src="../assets/icons/folders-icon.svg" alt="folders" />Folders
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="./podcast.html">
+            <div class="sidebar-link-text">
+              <img src="../assets/icons/podcasts-icon.svg" alt="podcasts" />Podcasts
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <div class="sidebar-link-text">
+              <img src="../assets/icons/audiobooks-icon.svg" alt="audiobooks" />AudioBooks
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <div class="sidebar-link-text">
+              <img src="../assets/icons/artists-icon.svg" alt="artists" />Artists
+            </div>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </aside>
 
-    <header class="top-header"></header>
+    <header class="top-header">
+    <nav class="header-nav">
+      <a href="../index.html" class="header-nav-link">
+        <img src="../assets/icons/home-icon.svg" alt="home" />
+        Home
+      </a>
+      <a href="#" class="header-nav-link">
+        <img src="../assets/icons/discover-icon.svg" alt="discover" />
+        Discover
+      </a>
+      <a href="./search.html" class="header-nav-link">
+        <img src="../assets/icons/search-icon.svg" alt="search" />
+        Search
+      </a>
+    </nav>
+    <div class="header-actions">
+      <button class="header-btn">
+        <img src="../assets/icons/notifications-icon.svg" alt="notifications" />
+      </button>
+      <button class="header-btn">
+        <img src="../assets/icons/lock-icon.svg" alt="lock" />
+      </button>
+      <button class="header-btn">
+        <img src="../assets/icons/friends-icon.svg" alt="friends" />
+      </button>
+      <button class="header-btn">
+        <img src="../assets/icons/settings-icon.svg" alt="settings" />
+      </button>
+      <button class="header-btn">
+        <img src="../assets/icons/profile.svg" alt="profile" />
+      </button>
+    </div>
+  </header>
 
     <main class="main-content">
       <section class="main-container-library">
@@ -22,37 +131,37 @@
                 <ul class="display-icons">
                   <li>
                     <a href="./library-list.html"
-                      ><img src="../assets/icons/display-list.svg" alt=""
+                      ><img src="../assets/icons/display-list.svg" alt="list view"
                     /></a>
                   </li>
                   <li>
                     <a href="#"
-                      ><img src="../assets/icons/grid icon.png" alt=""
+                      ><img src="../assets/icons/grid-icon.png" alt="grid view"
                     /></a>
                   </li>
                 </ul>
                 <ul class="alligment-icons">
                   <li>
                     <a href="#" class="icon-flex">
-                      <img src="../assets/icons/alignment.svg" alt="" />
+                      <img src="../assets/icons/alignment.svg" alt="sort" />
                       <p>Recent</p>
                     </a>
                   </li>
                   <li>
                     <a href="#" class="icon-flex">
-                      <img src="../assets/icons/group-icon.svg" alt="" />
+                      <img src="../assets/icons/group-icon.svg" alt="group" />
                       <p>Group</p>
                     </a>
                   </li>
                   <li>
                     <a href="#">
-                      <img src="../assets/icons/search-icon.svg" alt="" />
+                      <img src="../assets/icons/search-icon.svg" alt="search" />
                     </a>
                   </li>
                 </ul>
               </li>
               <li class="add-button">
-                <a href="#"><img src="../assets/icons/+ icon.svg" alt="" /></a>
+                <a href="#"><img src="../assets/icons/plus-icon.svg" alt="add" /></a>
               </li>
             </ul>
           </nav>
@@ -63,14 +172,14 @@
           <article>
             <div class="pin-wrapper">
               <div class="pin-circle">
-                <img src="../assets/icons/pin.svg" alt="" />
+                <img src="../assets/icons/pin.svg" alt="pinned" />
               </div>
             </div>
             <div class="article-shadow-light-1"></div>
             <div class="article-shadow-dark-1"></div>
             <figure>
               <img
-                src="../assets/images/library-img/liked songs cover.png"
+                src="../assets/images/library-img/liked-songs-cover.png"
                 alt="liked songs"
                 class="library-cards-img"
               />
@@ -85,14 +194,14 @@
           <article>
             <div class="pin-wrapper">
               <div class="pin-circle">
-                <img src="../assets/icons/pin.svg" alt="" />
+                <img src="../assets/icons/pin.svg" alt="pinned" />
               </div>
             </div>
             <div class="article-shadow-light-2"></div>
             <div class="article-shadow-dark-2"></div>
             <figure>
               <img
-                src="../assets/images/bowie mrgvali.png"
+                src="../assets/images/bowie-mrgvali.png"
                 alt="David Bowie"
                 class="library-cards-img"
               />
@@ -104,14 +213,14 @@
           <article>
             <div class="pin-wrapper">
               <div class="pin-circle">
-                <img src="../assets/icons/pin.svg" alt="" />
+                <img src="../assets/icons/pin.svg" alt="pinned" />
               </div>
             </div>
             <div class="article-shadow-light-3"></div>
             <div class="article-shadow-dark-3"></div>
             <figure>
               <img
-                src="../assets/images/punk mrgvali.png"
+                src="../assets/images/punk-mrgvali.png"
                 alt="Daft Punk"
                 class="library-cards-img"
               />
@@ -123,15 +232,15 @@
           <article>
             <div class="pin-wrapper">
               <div class="pin-circle">
-                <img src="../assets/icons/pin.svg" alt="" />
+                <img src="../assets/icons/pin.svg" alt="pinned" />
               </div>
             </div>
             <div class="article-shadow-light-4"></div>
             <div class="article-shadow-dark-4"></div>
             <figure>
               <img
-                src="../assets/images/library-img/without photo.png"
-                alt=""
+                src="../assets/images/library-img/without-photo.png"
+                alt="Chill Stuff"
                 class="library-cards-img"
               />
               <figcaption>
@@ -146,15 +255,15 @@
           <article>
             <div class="pin-wrapper">
               <div class="pin-circle">
-                <img src="../assets/icons/pin.svg" alt="" />
+                <img src="../assets/icons/pin.svg" alt="pinned" />
               </div>
             </div>
             <div class="article-shadow-light-4"></div>
             <div class="article-shadow-dark-4"></div>
             <figure>
               <img
-                src="../assets/images/library-img/without photo.png"
-                alt=""
+                src="../assets/images/library-img/without-photo.png"
+                alt="The Jux Box"
                 class="library-cards-img"
               />
               <figcaption>
@@ -169,15 +278,15 @@
           <article>
             <div class="pin-wrapper">
               <div class="pin-circle">
-                <img src="../assets/icons/pin.svg" alt="" />
+                <img src="../assets/icons/pin.svg" alt="pinned" />
               </div>
             </div>
             <div class="article-shadow-light-4"></div>
             <div class="article-shadow-dark-4"></div>
             <figure>
               <img
-                src="../assets/images/library-img/without photo.png"
-                alt=""
+                src="../assets/images/library-img/without-photo.png"
+                alt="Melancholy Mix"
               />
               <figcaption>
                 <p class="library-cards-title">Melancholy Mix</p>
@@ -191,15 +300,15 @@
           <article>
             <div class="pin-wrapper">
               <div class="pin-circle">
-                <img src="../assets/icons/pin.svg" alt="" />
+                <img src="../assets/icons/pin.svg" alt="pinned" />
               </div>
             </div>
             <div class="article-shadow-light-4"></div>
             <div class="article-shadow-dark-4"></div>
             <figure>
               <img
-                src="../assets/images/library-img/without photo.png"
-                alt=""
+                src="../assets/images/library-img/without-photo.png"
+                alt="Soft Mix"
                 class="library-cards-img"
               />
               <figcaption>
@@ -214,15 +323,15 @@
           <article>
             <div class="pin-wrapper">
               <div class="pin-circle">
-                <img src="../assets/icons/pin.svg" alt="" />
+                <img src="../assets/icons/pin.svg" alt="pinned" />
               </div>
             </div>
             <div class="article-shadow-light-4"></div>
             <div class="article-shadow-dark-4"></div>
             <figure>
               <img
-                src="../assets/images/library-img/without photo.png"
-                alt=""
+                src="../assets/images/library-img/without-photo.png"
+                alt="Fav bands"
                 class="library-cards-img"
               />
               <figcaption>
@@ -237,14 +346,14 @@
           <article>
             <div class="pin-wrapper">
               <div class="pin-circle">
-                <img src="../assets/icons/pin.svg" alt="" />
+                <img src="../assets/icons/pin.svg" alt="pinned" />
               </div>
             </div>
             <div class="article-shadow-light-5"></div>
             <div class="article-shadow-dark-5"></div>
             <figure>
               <img
-                src="../assets/images/library-img/linkin park.png"
+                src="../assets/images/library-img/linkin-park.png"
                 alt="Linkin Park"
                 class="library-cards-img"
               />
@@ -257,7 +366,7 @@
           <article>
             <div class="pin-wrapper">
               <div class="pin-circle">
-                <img src="../assets/icons/pin.svg" alt="" />
+                <img src="../assets/icons/pin.svg" alt="pinned" />
               </div>
             </div>
             <div class="article-shadow-light-3"></div>
@@ -297,7 +406,7 @@
             <figure>
               <img
                 src="../assets/images/library-img/muse.png"
-                alt=""
+                alt="Black Holes and Revelations"
                 class="library-cards-img"
               />
               <figcaption>
@@ -312,8 +421,8 @@
             <div class="article-shadow-dark-8"></div>
             <figure>
               <img
-                src="../assets/images/library-img/daily mix 1.png"
-                alt=""
+                src="../assets/images/library-img/daily-mix-1.png"
+                alt="Daily Mix 1"
                 class="library-cards-img"
               />
               <figcaption>
@@ -330,8 +439,8 @@
             <div class="article-shadow-dark-9"></div>
             <figure>
               <img
-                src="../assets/images/library-img/daily mix 2.png"
-                alt=""
+                src="../assets/images/library-img/daily-mix-2.png"
+                alt="Daily Mix 2"
                 class="library-cards-img"
               />
               <figcaption>
@@ -348,8 +457,8 @@
             <div class="article-shadow-dark-10"></div>
             <figure>
               <img
-                src="../assets/images/library-img/dayli mix 3.png"
-                alt=""
+                src="../assets/images/library-img/dayli-mix-3.png"
+                alt="Daily Mix 3"
                 class="library-cards-img"
               />
               <figcaption>
@@ -366,8 +475,8 @@
             <div class="article-shadow-dark-11"></div>
             <figure>
               <img
-                src="../assets/images/library-img/chilli peppers.png"
-                alt=""
+                src="../assets/images/library-img/chilli-peppers.png"
+                alt="Rock Mix"
                 class="library-cards-img"
               />
               <figcaption>
@@ -384,8 +493,8 @@
             <div class="article-shadow-dark-12"></div>
             <figure>
               <img
-                src="../assets/images/library-img/chill mix.png"
-                alt=""
+                src="../assets/images/library-img/chill-mix.png"
+                alt="Chill Mix"
                 class="library-cards-img"
               />
               <figcaption>
@@ -402,8 +511,8 @@
             <div class="article-shadow-dark-13"></div>
             <figure>
               <img
-                src="../assets/images/library-img/pop mix.png"
-                alt=""
+                src="../assets/images/library-img/pop-mix.png"
+                alt="Pop Mix"
                 class="library-cards-img"
               />
               <figcaption>
@@ -419,6 +528,74 @@
       </section>
     </main>
 
-    <footer class="player-bar"></footer>
+    <footer class="player-bar">
+    <div class="player-left-container">
+      <div class="player-controls">
+        <div class="player-buttons">
+          <button class="player-btn">
+            <img src="../assets/icons/player-pause-icon.svg" alt="pause" />
+          </button>
+          <button class="player-btn">
+            <img src="../assets/icons/player-previous-icon.svg" alt="previous" />
+          </button>
+          <button class="player-btn">
+            <img src="../assets/icons/player-next-icon.svg" alt="next" />
+          </button>
+          <button class="player-btn">
+            <img src="../assets/icons/player-shuffle-icon.svg" alt="shuffle" />
+          </button>
+          <button class="player-btn">
+            <img src="../assets/icons/player-repeat-icon.svg" alt="repeat" />
+          </button>
+        </div>
+        <div class="player-progress">
+          <span class="progress-time">2:23</span>
+          <div class="progress-bar">
+            <div class="progress-bar-fill"></div>
+          </div>
+          <span class="progress-time">4:45</span>
+        </div>
+        <div class="player-volume">
+          <button class="player-btn">
+            <img src="../assets/icons/player-volume-icon.svg" alt="volume" />
+          </button>
+        </div>
+      </div>
+      <div class="player-info">
+        <img class="player-cover" src="../assets/images/duft-punk-small.png" alt="album cover" />
+        <div class="player-text">
+          <span class="player-title">Get Lucky</span>
+          <span class="player-artist">Daft Punk</span>
+          <span class="player-album">Random Access Memories</span>
+        </div>
+      </div>
+    </div>
+    <div class="player-right-container">
+      <button class="player-btn">
+        <img src="../assets/icons/player-heart-icon.svg" alt="like" />
+      </button>
+      <button class="player-btn">
+        <img src="../assets/icons/player-add-icon.svg" alt="add" />
+      </button>
+      <button class="player-btn">
+        <img src="../assets/icons/player-lyrics-icon.svg" alt="lyrics" />
+      </button>
+      <button class="player-btn">
+        <img src="../assets/icons/player-idk-icon.svg" alt="icon" />
+      </button>
+      <button class="player-btn">
+        <img src="../assets/icons/player-more-icon.svg" alt="more" />
+      </button>
+      <div class="player-divider">
+        <img src="../assets/icons/player-divider-icon.svg" alt="divider" />
+      </div>
+      <button class="player-btn">
+        <img src="../assets/icons/player-dj-icon.svg" alt="dj" />
+      </button>
+      <button class="player-btn">
+        <img src="../assets/icons/player-queue-icon.svg" alt="queue" />
+      </button>
+    </div>
+  </footer>
   </body>
 </html>
