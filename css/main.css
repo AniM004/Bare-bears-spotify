@@ -1516,8 +1516,6 @@ h4 {
 }
 
 .main-container-library {
-  border-radius: 1rem;
-  border: 1px solid #202020;
   min-height: 100vh;
   padding: 2.2rem 5rem 0rem 3.7rem;
 }
@@ -1792,8 +1790,6 @@ h4 {
 }
 
 .main-container-library-list {
-  border-radius: 1rem;
-  border: 1px solid #202020;
   min-height: 100vh;
   padding: 1.2rem 2.76rem 0rem 2.5rem;
 }
