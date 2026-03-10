@@ -2,3 +2,5 @@
 node_modules/
 .sass-cache/
 *.css.map
+css/main.scss
+css/main.scss.map
