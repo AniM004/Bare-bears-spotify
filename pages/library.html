@@ -7,18 +7,418 @@
     <title>Spotify - Library</title>
   </head>
   <body>
+    <aside class="sidebar"></aside>
 
-    <aside class="sidebar">
-    </aside>
-
-    <header class="top-header">
-    </header>
+    <header class="top-header"></header>
 
     <main class="main-content">
+      <section class="main-container-library">
+        <!-- actions header list  -->
+
+        <section class="main-container-head">
+          <nav>
+            <ul class="library-nav-wrapper">
+              <li class="library-actions-wrapper">
+                <ul class="display-icons">
+                  <li>
+                    <a href="./library-list.html"
+                      ><img src="../assets/icons/display-list.svg" alt=""
+                    /></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><img src="../assets/icons/grid icon.png" alt=""
+                    /></a>
+                  </li>
+                </ul>
+                <ul class="alligment-icons">
+                  <li>
+                    <a href="#" class="icon-flex">
+                      <img src="../assets/icons/alignment.svg" alt="" />
+                      <p>Recent</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="icon-flex">
+                      <img src="../assets/icons/group-icon.svg" alt="" />
+                      <p>Group</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="../assets/icons/search-icon.svg" alt="" />
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="add-button">
+                <a href="#"><img src="../assets/icons/+ icon.svg" alt="" /></a>
+              </li>
+            </ul>
+          </nav>
+        </section>
+
+        <!-- songs list  -->
+        <div class="library-cards-wrapper">
+          <article>
+            <div class="pin-wrapper">
+              <div class="pin-circle">
+                <img src="../assets/icons/pin.svg" alt="" />
+              </div>
+            </div>
+            <div class="article-shadow-light-1"></div>
+            <div class="article-shadow-dark-1"></div>
+            <figure>
+              <img
+                src="../assets/images/library-img/liked songs cover.png"
+                alt="liked songs"
+                class="library-cards-img"
+              />
+              <figcaption>
+                <p class="library-cards-title">Liked songs</p>
+              </figcaption>
+              <p class="library-cards-description">
+                Numb, Crawling, In the End, and more
+              </p>
+            </figure>
+          </article>
+          <article>
+            <div class="pin-wrapper">
+              <div class="pin-circle">
+                <img src="../assets/icons/pin.svg" alt="" />
+              </div>
+            </div>
+            <div class="article-shadow-light-2"></div>
+            <div class="article-shadow-dark-2"></div>
+            <figure>
+              <img
+                src="../assets/images/bowie mrgvali.png"
+                alt="David Bowie"
+                class="library-cards-img"
+              />
+              <figcaption>
+                <p class="library-cards-title">David Bowie</p>
+              </figcaption>
+            </figure>
+          </article>
+          <article>
+            <div class="pin-wrapper">
+              <div class="pin-circle">
+                <img src="../assets/icons/pin.svg" alt="" />
+              </div>
+            </div>
+            <div class="article-shadow-light-3"></div>
+            <div class="article-shadow-dark-3"></div>
+            <figure>
+              <img
+                src="../assets/images/punk mrgvali.png"
+                alt="Daft Punk"
+                class="library-cards-img"
+              />
+              <figcaption>
+                <p class="library-cards-title">Daft Punk</p>
+              </figcaption>
+            </figure>
+          </article>
+          <article>
+            <div class="pin-wrapper">
+              <div class="pin-circle">
+                <img src="../assets/icons/pin.svg" alt="" />
+              </div>
+            </div>
+            <div class="article-shadow-light-4"></div>
+            <div class="article-shadow-dark-4"></div>
+            <figure>
+              <img
+                src="../assets/images/library-img/without photo.png"
+                alt=""
+                class="library-cards-img"
+              />
+              <figcaption>
+                <p class="library-cards-title">Chill Stuff</p>
+                <p class="library-cards-quantity">152</p>
+              </figcaption>
+              <p class="library-cards-description">
+                Poison girl friend, Mitski, and more
+              </p>
+            </figure>
+          </article>
+          <article>
+            <div class="pin-wrapper">
+              <div class="pin-circle">
+                <img src="../assets/icons/pin.svg" alt="" />
+              </div>
+            </div>
+            <div class="article-shadow-light-4"></div>
+            <div class="article-shadow-dark-4"></div>
+            <figure>
+              <img
+                src="../assets/images/library-img/without photo.png"
+                alt=""
+                class="library-cards-img"
+              />
+              <figcaption>
+                <p class="library-cards-title">The Jux Box</p>
+                <p class="library-cards-quantity">50</p>
+              </figcaption>
+              <p class="library-cards-description">
+                Simon and Garfunkel, Daft Punk, and more
+              </p>
+            </figure>
+          </article>
+          <article>
+            <div class="pin-wrapper">
+              <div class="pin-circle">
+                <img src="../assets/icons/pin.svg" alt="" />
+              </div>
+            </div>
+            <div class="article-shadow-light-4"></div>
+            <div class="article-shadow-dark-4"></div>
+            <figure>
+              <img
+                src="../assets/images/library-img/without photo.png"
+                alt=""
+              />
+              <figcaption>
+                <p class="library-cards-title">Melancholy Mix</p>
+                <p class="library-cards-quantity">55</p>
+              </figcaption>
+              <p class="library-cards-description">
+                Jeff Buckley, Cigarettes After Sex, and more
+              </p>
+            </figure>
+          </article>
+          <article>
+            <div class="pin-wrapper">
+              <div class="pin-circle">
+                <img src="../assets/icons/pin.svg" alt="" />
+              </div>
+            </div>
+            <div class="article-shadow-light-4"></div>
+            <div class="article-shadow-dark-4"></div>
+            <figure>
+              <img
+                src="../assets/images/library-img/without photo.png"
+                alt=""
+                class="library-cards-img"
+              />
+              <figcaption>
+                <p class="library-cards-title">Soft Mix</p>
+                <p class="library-cards-quantity">30</p>
+              </figcaption>
+              <p class="library-cards-description">
+                She&Him, TV Girl, and more
+              </p>
+            </figure>
+          </article>
+          <article>
+            <div class="pin-wrapper">
+              <div class="pin-circle">
+                <img src="../assets/icons/pin.svg" alt="" />
+              </div>
+            </div>
+            <div class="article-shadow-light-4"></div>
+            <div class="article-shadow-dark-4"></div>
+            <figure>
+              <img
+                src="../assets/images/library-img/without photo.png"
+                alt=""
+                class="library-cards-img"
+              />
+              <figcaption>
+                <p class="library-cards-title">Fav bands</p>
+                <p class="library-cards-quantity">5</p>
+              </figcaption>
+              <p class="library-cards-description">
+                The Beatles, The Last Shadow Puppets, and more
+              </p>
+            </figure>
+          </article>
+          <article>
+            <div class="pin-wrapper">
+              <div class="pin-circle">
+                <img src="../assets/icons/pin.svg" alt="" />
+              </div>
+            </div>
+            <div class="article-shadow-light-5"></div>
+            <div class="article-shadow-dark-5"></div>
+            <figure>
+              <img
+                src="../assets/images/library-img/linkin park.png"
+                alt="Linkin Park"
+                class="library-cards-img"
+              />
+              <figcaption>
+                <p class="library-cards-title">Meteora</p>
+              </figcaption>
+              <p class="library-cards-description">Linkin Park</p>
+            </figure>
+          </article>
+          <article>
+            <div class="pin-wrapper">
+              <div class="pin-circle">
+                <img src="../assets/icons/pin.svg" alt="" />
+              </div>
+            </div>
+            <div class="article-shadow-light-3"></div>
+            <div class="article-shadow-dark-3"></div>
+            <figure>
+              <img
+                src="../assets/images/library-img/punk.png"
+                alt="Daft Punk"
+                class="library-cards-img"
+              />
+              <figcaption>
+                <p class="library-cards-title">Random Access...</p>
+                <p class="library-cards-quantity">13</p>
+              </figcaption>
+              <p class="library-cards-description">Daft Punk</p>
+            </figure>
+          </article>
+          <article>
+            <div class="article-shadow-light-6"></div>
+            <div class="article-shadow-dark-6"></div>
+            <figure>
+              <img
+                src="../assets/images/library-img/beatles.png"
+                alt="The Beatles"
+                class="library-cards-img"
+              />
+              <figcaption>
+                <p class="library-cards-title">Abbey Road</p>
+                <p class="library-cards-quantity">13</p>
+              </figcaption>
+              <p class="library-cards-description">The Beatles</p>
+            </figure>
+          </article>
+          <article>
+            <div class="article-shadow-light-7"></div>
+            <div class="article-shadow-dark-7"></div>
+            <figure>
+              <img
+                src="../assets/images/library-img/muse.png"
+                alt=""
+                class="library-cards-img"
+              />
+              <figcaption>
+                <p class="library-cards-title">Black Holes and Revelations</p>
+                <p class="library-cards-quantity">13</p>
+              </figcaption>
+              <p class="library-cards-description">Muse</p>
+            </figure>
+          </article>
+          <article>
+            <div class="article-shadow-light-8"></div>
+            <div class="article-shadow-dark-8"></div>
+            <figure>
+              <img
+                src="../assets/images/library-img/daily mix 1.png"
+                alt=""
+                class="library-cards-img"
+              />
+              <figcaption>
+                <p class="library-cards-title">Daily Mix 1</p>
+                <p class="library-cards-quantity-daily-1">50</p>
+              </figcaption>
+              <p class="library-cards-description">
+                Linkin Park, System Of A Down, Coal Chamber...
+              </p>
+            </figure>
+          </article>
+          <article>
+            <div class="article-shadow-light-9"></div>
+            <div class="article-shadow-dark-9"></div>
+            <figure>
+              <img
+                src="../assets/images/library-img/daily mix 2.png"
+                alt=""
+                class="library-cards-img"
+              />
+              <figcaption>
+                <p class="library-cards-title">Daily Mix 2</p>
+                <p class="library-cards-quantity-daily-2">50</p>
+              </figcaption>
+              <p class="library-cards-description">
+                Avril Lavigne, Lorde, Charli XCX and more
+              </p>
+            </figure>
+          </article>
+          <article>
+            <div class="article-shadow-light-10"></div>
+            <div class="article-shadow-dark-10"></div>
+            <figure>
+              <img
+                src="../assets/images/library-img/dayli mix 3.png"
+                alt=""
+                class="library-cards-img"
+              />
+              <figcaption>
+                <p class="library-cards-title">Daily Mix 3</p>
+                <p class="library-cards-quantity-daily-3">50</p>
+              </figcaption>
+              <p class="library-cards-description">
+                The Strokes, Martin Garrix, MGMT and more
+              </p>
+            </figure>
+          </article>
+          <article>
+            <div class="article-shadow-light-11"></div>
+            <div class="article-shadow-dark-11"></div>
+            <figure>
+              <img
+                src="../assets/images/library-img/chilli peppers.png"
+                alt=""
+                class="library-cards-img"
+              />
+              <figcaption>
+                <p class="library-cards-title">Rock Mix</p>
+                <p class="library-cards-quantity-rock">50</p>
+              </figcaption>
+              <p class="library-cards-description">
+                Red Hot Chili Peppers, R.E.M., Guns N’ Roses...
+              </p>
+            </figure>
+          </article>
+          <article>
+            <div class="article-shadow-light-12"></div>
+            <div class="article-shadow-dark-12"></div>
+            <figure>
+              <img
+                src="../assets/images/library-img/chill mix.png"
+                alt=""
+                class="library-cards-img"
+              />
+              <figcaption>
+                <p class="library-cards-title">Chill Mix</p>
+                <p class="library-cards-quantity-chill">50</p>
+              </figcaption>
+              <p class="library-cards-description">
+                MF DOOM, Daft Punk, The Chainsmokers, and more
+              </p>
+            </figure>
+          </article>
+          <article>
+            <div class="article-shadow-light-13"></div>
+            <div class="article-shadow-dark-13"></div>
+            <figure>
+              <img
+                src="../assets/images/library-img/pop mix.png"
+                alt=""
+                class="library-cards-img"
+              />
+              <figcaption>
+                <p class="library-cards-title">Pop Mix</p>
+                <p class="library-cards-quantity-pop">50</p>
+              </figcaption>
+              <p class="library-cards-description">
+                Red Hot Chili Peppers, R.E.M., Guns N’ Roses...
+              </p>
+            </figure>
+          </article>
+        </div>
+      </section>
     </main>
 
-    <footer class="player-bar">
-    </footer>
-
+    <footer class="player-bar"></footer>
   </body>
 </html>
