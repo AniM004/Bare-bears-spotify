@@ -25,6 +25,7 @@
 @use "./pages/podcast";
 @use "./pages/episode";
 @use "./pages/library";
+@use "./pages/library-list";
 
 @media (max-width: 768px) {
   body {

@@ -27,8 +27,22 @@
   border: 2px solid #89898940;
 }
 
+@mixin actions-flex {
+  display: flex;
+  align-items: center;
+}
 
+@mixin dark-shadow {
+  width: 154px;
+  height: 6px;
+  border-radius: 7.25px 7.25px 0 0;
+}
 
+@mixin light-shadow {
+  width: 133px;
+  height: 3px;
+  border-radius: 7.25px 7.25px 0 0;
+}
 
 %h3 {
   font-size: 2rem;
