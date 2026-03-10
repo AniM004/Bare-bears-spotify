@@ -146,7 +146,7 @@ body {
   text-decoration: none;
   border-radius: 0.6rem;
   cursor: pointer;
-  transition: 0.3s ease;
+  transition: 0.2s ease;
 }
 .sidebar .sidebar-links li a .sidebar-link-text {
   display: flex;
@@ -180,7 +180,7 @@ body {
   border-radius: 1rem;
   font-size: 1.4rem;
   color: #898989;
-  transition: 0.3s ease;
+  transition: 0.2s ease;
 }
 .top-header .header-nav .header-nav-link:hover {
   color: #FFFFFF;
@@ -671,6 +671,82 @@ body {
   }
 }
 
+.player-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2.1rem;
+}
+.player-bar .player-left-container {
+  display: flex;
+  align-items: center;
+  gap: 2.6rem;
+}
+.player-bar .player-left-container .player-controls {
+  width: 65.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.player-bar .player-left-container .player-controls .player-buttons {
+  display: flex;
+  align-items: center;
+  gap: 0.475rem;
+}
+.player-bar .player-left-container .player-controls .player-progress {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  max-width: 39.6rem;
+}
+.player-bar .player-left-container .player-controls .player-progress .progress-time {
+  color: #898989;
+  font-size: 1.2rem;
+}
+.player-bar .player-left-container .player-controls .player-progress .progress-bar {
+  flex: 1;
+  height: 0.4rem;
+  background-color: #898989;
+  border-radius: 0.2rem;
+  position: relative;
+}
+.player-bar .player-left-container .player-controls .player-progress .progress-bar-fill {
+  width: 42%;
+  height: 100%;
+  background-color: #FFFFFF;
+  border-radius: 0.2rem;
+}
+.player-bar .player-left-container .player-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.player-bar .player-left-container .player-info .player-text {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.4rem;
+}
+.player-bar .player-left-container .player-info .player-text .player-title {
+  color: #FFFFFF;
+}
+.player-bar .player-left-container .player-info .player-text .player-artist,
+.player-bar .player-left-container .player-info .player-text .player-album {
+  color: #898989;
+}
+.player-bar .player-right-container {
+  width: 34.8rem;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+.player-bar .player-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
 .main-content-artist-border {
   width: 100%;
   border: 1px solid rgba(137, 137, 137, 0.2);
@@ -905,81 +981,6 @@ body {
 }
 .main-content-artist-home .daft-section .section-right .card-border .card {
   border-radius: 10px;
-}
-.player-bar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 2.1rem;
-}
-.player-bar .player-left-container {
-  display: flex;
-  align-items: center;
-  gap: 2.6rem;
-}
-.player-bar .player-left-container .player-controls {
-  width: 65.5rem;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-.player-bar .player-left-container .player-controls .player-buttons {
-  display: flex;
-  align-items: center;
-  gap: 0.475rem;
-}
-.player-bar .player-left-container .player-controls .player-progress {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  width: 100%;
-  max-width: 39.6rem;
-}
-.player-bar .player-left-container .player-controls .player-progress .progress-time {
-  color: #898989;
-  font-size: 1.2rem;
-}
-.player-bar .player-left-container .player-controls .player-progress .progress-bar {
-  flex: 1;
-  height: 0.4rem;
-  background-color: #898989;
-  border-radius: 0.2rem;
-  position: relative;
-}
-.player-bar .player-left-container .player-controls .player-progress .progress-bar-fill {
-  width: 42%;
-  height: 100%;
-  background-color: #FFFFFF;
-  border-radius: 0.2rem;
-}
-.player-bar .player-left-container .player-info {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-}
-.player-bar .player-left-container .player-info .player-text {
-  display: flex;
-  flex-direction: column;
-  font-size: 1.4rem;
-}
-.player-bar .player-left-container .player-info .player-text .player-title {
-  color: #FFFFFF;
-}
-.player-bar .player-left-container .player-info .player-text .player-artist,
-.player-bar .player-left-container .player-info .player-text .player-album {
-  color: #898989;
-}
-.player-bar .player-right-container {
-  width: 34.8rem;
-  display: flex;
-  align-items: center;
-  gap: 0.6rem;
-}
-.player-bar .player-btn {
-  background: transparent;
-  border: none;
-  cursor: pointer;
 }
 
 .main-content-search {
@@ -1297,47 +1298,47 @@ html {
   cursor: pointer;
 }
 .main-container-album #heart-icon-1:checked + .heart-label {
-  background-image: url("../../assets/icons/green heart.png");
+  background-image: url("../../assets/icons/green-heart.png");
   background-position: center;
   background-repeat: no-repeat;
 }
 .main-container-album #heart-icon-2:checked + .heart-label {
-  background-image: url("../../assets/icons/green heart.png");
+  background-image: url("../../assets/icons/green-heart.png");
   background-position: center;
   background-repeat: no-repeat;
 }
 .main-container-album #heart-icon-3:checked + .heart-label {
-  background-image: url("../../assets/icons/green heart.png");
+  background-image: url("../../assets/icons/green-heart.png");
   background-position: center;
   background-repeat: no-repeat;
 }
 .main-container-album #heart-icon-4:checked + .heart-label {
-  background-image: url("../../assets/icons/green heart.png");
+  background-image: url("../../assets/icons/green-heart.png");
   background-position: center;
   background-repeat: no-repeat;
 }
 .main-container-album #heart-icon-5:checked + .heart-label {
-  background-image: url("../../assets/icons/green heart.png");
+  background-image: url("../../assets/icons/green-heart.png");
   background-position: center;
   background-repeat: no-repeat;
 }
 .main-container-album #heart-icon-6:checked + .heart-label {
-  background-image: url("../../assets/icons/green heart.png");
+  background-image: url("../../assets/icons/green-heart.png");
   background-position: center;
   background-repeat: no-repeat;
 }
 .main-container-album #heart-icon-7:checked + .heart-label {
-  background-image: url("../../assets/icons/green heart.png");
+  background-image: url("../../assets/icons/green-heart.png");
   background-position: center;
   background-repeat: no-repeat;
 }
 .main-container-album #heart-icon-8:checked + .heart-label {
-  background-image: url("../../assets/icons/green heart.png");
+  background-image: url("../../assets/icons/green-heart.png");
   background-position: center;
   background-repeat: no-repeat;
 }
 .main-container-album #heart-icon-9:checked + .heart-label {
-  background-image: url("../../assets/icons/green heart.png");
+  background-image: url("../../assets/icons/green-heart.png");
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -1787,7 +1788,7 @@ h4 {
   filter: brightness(2) invert(0) contrast(4) drop-shadow(0 0 1.5px #1ED760);
 }
 .main-content-episode .episode-video {
-  background-image: url(../../assets/images/The\ Joe\ Rogan\ photo.png);
+  background-image: url(../../assets/images/the-joe-rogan-photo.png);
   background-size: 100%;
   background-position: center;
   width: min(96.9rem, 98%);
@@ -2211,37 +2212,37 @@ h4 {
   cursor: pointer;
 }
 .main-container-library-list #heart-icon-1:checked + .heart-label {
-  background-image: url("../../assets/icons/green heart.png");
+  background-image: url("../../assets/icons/green-heart.png");
   background-position: center;
   background-repeat: no-repeat;
 }
 .main-container-library-list #heart-icon-2:checked + .heart-label {
-  background-image: url("../../assets/icons/green heart.png");
+  background-image: url("../../assets/icons/green-heart.png");
   background-position: center;
   background-repeat: no-repeat;
 }
 .main-container-library-list #heart-icon-3:checked + .heart-label {
-  background-image: url("../../assets/icons/green heart.png");
+  background-image: url("../../assets/icons/green-heart.png");
   background-position: center;
   background-repeat: no-repeat;
 }
 .main-container-library-list #heart-icon-4:checked + .heart-label {
-  background-image: url("../../assets/icons/green heart.png");
+  background-image: url("../../assets/icons/green-heart.png");
   background-position: center;
   background-repeat: no-repeat;
 }
 .main-container-library-list #heart-icon-5:checked + .heart-label {
-  background-image: url("../../assets/icons/green heart.png");
+  background-image: url("../../assets/icons/green-heart.png");
   background-position: center;
   background-repeat: no-repeat;
 }
 .main-container-library-list #heart-icon-6:checked + .heart-label {
-  background-image: url("../../assets/icons/green heart.png");
+  background-image: url("../../assets/icons/green-heart.png");
   background-position: center;
   background-repeat: no-repeat;
 }
 .main-container-library-list #heart-icon-7:checked + .heart-label {
-  background-image: url("../../assets/icons/green heart.png");
+  background-image: url("../../assets/icons/green-heart.png");
   background-position: center;
   background-repeat: no-repeat;
 }
