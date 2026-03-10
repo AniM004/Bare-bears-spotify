@@ -9,15 +9,20 @@
   flex-direction: column;
   overflow-x: hidden;
 
-  h2 {
-    display: flex;
-    align-items: center;
-    height: 5.4rem;
-    gap: 1rem;
-    font-size: 1.4rem;
-    font-weight: 400;
-    color: rgba(137, 137, 137, 1);
-    cursor: pointer;
+  .sidebar-title {
+    text-decoration: none;
+    color: inherit;
+
+    h2 {
+      display: flex;
+      align-items: center;
+      height: 5.4rem;
+      gap: 1rem;
+      font-size: 1.4rem;
+      font-weight: 400;
+      color: rgba(137, 137, 137, 1);
+      cursor: pointer;
+    }
   }
 
   .sidebar-nav {
@@ -61,7 +66,7 @@
     }
   }
 
-  a:hover {
+  .sidebar-links a:hover {
     background: #202020;
   }
 }

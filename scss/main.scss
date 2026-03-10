@@ -11,10 +11,6 @@
 @use "./layout/main-content";
 @use "./layout/player";
 
-@use "./components/buttons";
-@use "./components/filters";
-@use "./components/album_card";
-@use "./components/artist_card";
 
 @use "./pages/discover";
 @use "./pages/song";

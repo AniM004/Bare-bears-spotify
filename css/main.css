@@ -111,7 +111,11 @@ body {
   flex-direction: column;
   overflow-x: hidden;
 }
-.sidebar h2 {
+.sidebar .sidebar-title {
+  text-decoration: none;
+  color: inherit;
+}
+.sidebar .sidebar-title h2 {
   display: flex;
   align-items: center;
   height: 5.4rem;
@@ -156,7 +160,7 @@ body {
 .sidebar .sidebar-links li a img {
   height: 100%;
 }
-.sidebar a:hover {
+.sidebar .sidebar-links a:hover {
   background: #202020;
 }
 
