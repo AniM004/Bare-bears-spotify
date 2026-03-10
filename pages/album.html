@@ -1,13 +1,15 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/main.css" />
-    <title>Spotify - Album</title>
-  </head>
-  <body>
-    <aside class="sidebar">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../css/main.css" />
+  <title>Spotify - Album</title>
+</head>
+
+<body>
+  <aside class="sidebar">
     <h2 class="sidebar-title">
       <img src="../assets/icons/library-icon.svg" alt="library" />My Library
     </h2>
@@ -86,7 +88,7 @@
     </nav>
   </aside>
 
-    <header class="top-header">
+  <header class="top-header">
     <nav class="header-nav">
       <a href="../index.html" class="header-nav-link">
         <img src="../assets/icons/home-icon.svg" alt="home" />
@@ -120,218 +122,210 @@
     </div>
   </header>
 
-    <!-- main structure  -->
-    <main class="main-content album-page">
-      <section class="main-container-album">
-        <div class="header">
-          <h1>Random Access Memories</h1>
+  <!-- main structure  -->
+  <main class="main-content album-page">
+    <section class="main-container-album">
+      <div class="header">
+        <h1>Random Access Memories</h1>
 
-          <div class="header-info">
-            <img src="../assets/icons/artists-icon.svg" alt="artists" />
-            <p class="highlight">Daft Punk</p>
-            <div class="dot"></div>
-            <p>2013</p>
-            <div class="dot"></div>
-            <p>13 songs</p>
-            <div class="dot"></div>
-            <p>1 hr 14 min</p>
-          </div>
-          <!-- header actions buttons -->
-          <div class="header-actions">
-            <ul class="header-actions-left">
-              <li>
-                <a href="#">
-                  <img src="../assets/icons/green-start-button.png" alt="play" />
-                </a>
-              </li>
-              <li>
-                <a href="#" class="button-hovers">
-                  <img src="../assets/icons/shuffle-icon.svg" alt="shuffle" />
-                </a>
-              </li>
-              <li>
-                <a href="#" class="button-hovers">
-                  <img src="../assets/icons/circle-add.svg" alt="add" />
-                </a>
-              </li>
-              <li>
-                <a href="#" class="button-hovers">
-                  <img src="../assets/icons/unknown-icon.png" alt="more options" />
-                </a>
-              </li>
-              <li>
-                <a href="#" class="button-hovers">
-                  <img src="../assets/icons/download.svg" alt="download" />
-                </a>
-              </li>
-              <li>
-                <a href="#" class="button-hovers">
-                  <img src="../assets/icons/share.svg" alt="share" />
-                </a>
-              </li>
-              <li>
-                <a href="#" class="button-hovers">
-                  <img src="../assets/icons/dots-icon.svg" alt="more actions" />
-                </a>
-              </li>
-            </ul>
-            <ul class="header-actions-right">
-              <li>
-                <a href="" class="button-hovers"
-                  ><img src="../assets/icons/search-icon.svg" alt="search"
-                /></a>
-              </li>
-            </ul>
-          </div>
+        <div class="header-info">
+          <img src="../assets/icons/artists-icon.svg" alt="artists" />
+          <p class="highlight">Daft Punk</p>
+          <div class="dot"></div>
+          <p>2013</p>
+          <div class="dot"></div>
+          <p>13 songs</p>
+          <div class="dot"></div>
+          <p>1 hr 14 min</p>
+        </div>
+        <!-- header actions buttons -->
+        <div class="header-actions">
+          <ul class="header-actions-left">
+            <li>
+              <a href="#">
+                <img src="../assets/icons/green-start-button.png" alt="play" />
+              </a>
+            </li>
+            <li>
+              <a href="#" class="button-hovers">
+                <img src="../assets/icons/shuffle-icon.svg" alt="shuffle" />
+              </a>
+            </li>
+            <li>
+              <a href="#" class="button-hovers">
+                <img src="../assets/icons/circle-add.svg" alt="add" />
+              </a>
+            </li>
+            <li>
+              <a href="#" class="button-hovers">
+                <img src="../assets/icons/unknown-icon.png" alt="more options" />
+              </a>
+            </li>
+            <li>
+              <a href="#" class="button-hovers">
+                <img src="../assets/icons/download.svg" alt="download" />
+              </a>
+            </li>
+            <li>
+              <a href="#" class="button-hovers">
+                <img src="../assets/icons/share.svg" alt="share" />
+              </a>
+            </li>
+            <li>
+              <a href="#" class="button-hovers">
+                <img src="../assets/icons/dots-icon.svg" alt="more actions" />
+              </a>
+            </li>
+          </ul>
+          <ul class="header-actions-right">
+            <li>
+              <a href="" class="button-hovers"><img src="../assets/icons/search-icon.svg" alt="search" /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- playlist-container  -->
+
+      <!-- divider  -->
+      <div class="divider">
+        <p class="">#</p>
+        <p>Title</p>
+
+        <p>Duration</p>
+        <p></p>
+      </div>
+
+      <!-- songs-list  -->
+
+      <div class="playlist-container">
+        <!-- 1  -->
+
+        <p class="list">1</p>
+        <div class="text-wrapper">
+          <p class="song-title">Give Life Back to Music</p>
+          <p class="artist-title">Daft Punk</p>
+        </div>
+        <div class="duration">4:35</div>
+        <input type="checkbox" id="heart-icon-1" />
+        <label for="heart-icon-1" class="heart-label"> </label>
+
+        <!-- 2  -->
+        <p class="list">2</p>
+        <div class="text-wrapper">
+          <p class="song-title">The Game of Love</p>
+          <p class="artist-title">Daft Punk, Julian Casablancas</p>
+        </div>
+        <div class="duration">5:37</div>
+        <input type="checkbox" id="heart-icon-2" />
+        <label for="heart-icon-2" class="heart-label"> </label>
+
+        <!-- 3  -->
+        <p class="list">3</p>
+        <div class="text-wrapper">
+          <p class="song-title">Giorgio by Moroder</p>
+          <p class="artist-title">Gorillaz</p>
+        </div>
+        <div class="duration">3:53</div>
+        <input type="checkbox" id="heart-icon-3" />
+        <label for="heart-icon-3" class="heart-label"> </label>
+
+        <!-- 4  -->
+
+        <p class="list">4</p>
+        <div class="text-wrapper">
+          <p class="song-title">Within</p>
+          <p class="artist-title">Soft Cell</p>
+        </div>
+        <div class="duration">2:33</div>
+        <input type="checkbox" id="heart-icon-4" />
+        <label for="heart-icon-4" class="heart-label"> </label>
+
+        <!-- 5  -->
+
+        <p class="list">5</p>
+        <div class="text-wrapper">
+          <p class="song-title">Instant Crush (feat. Julian Casablancas)</p>
+          <p class="artist-title">Daft Punk</p>
+        </div>
+        <div class="duration">5:20</div>
+        <input type="checkbox" id="heart-icon-5" />
+        <label for="heart-icon-5" class="heart-label"> </label>
+
+        <!-- 6  -->
+        <p class="list">6</p>
+        <div class="text-wrapper">
+          <p class="song-title">Electric Feel</p>
+          <p class="artist-title">MGMT</p>
+        </div>
+        <div class="duration">3:49</div>
+        <input type="checkbox" id="heart-icon-6" />
+        <label for="heart-icon-6" class="heart-label"> </label>
+
+        <!-- 7  -->
+
+        <p class="list">7</p>
+        <div class="text-wrapper">
+          <p class="song-title">Give Life Back to Music</p>
+          <p class="artist-title">Daft Punk</p>
+        </div>
+        <div class="duration">4:35</div>
+        <input type="checkbox" id="heart-icon-7" />
+        <label for="heart-icon-7" class="heart-label"> </label>
+
+        <!-- 8  -->
+
+        <p class="list">8</p>
+        <div class="text-wrapper">
+          <p class="song-title">Give Life Back to Music</p>
+          <p class="artist-title">Daft Punk</p>
+        </div>
+        <div class="duration">4:35</div>
+        <input type="checkbox" id="heart-icon-8" />
+        <label for="heart-icon-8" class="heart-label"> </label>
+
+        <!-- 9  -->
+        <p class="list">9</p>
+        <div class="text-wrapper">
+          <p class="song-title">Give Life Back to Music</p>
+          <p class="artist-title">Daft Punk</p>
+        </div>
+        <div class="duration">4:35</div>
+        <input type="checkbox" id="heart-icon-9" />
+        <label for="heart-icon-9" class="heart-label"> </label>
+      </div>
+
+      <!-- main-right-column  -->
+
+      <div class="album-cover">
+        <img src="../assets/images/punk-black-cover.png" alt="Duft Punk cover photo" />
+        <div class="genre-wrapper">
+          <p class="genre">Funk</p>
+          <p class="genre">Electronic music</p>
+          <p class="genre">Disco</p>
+          <p class="genre">Soft Rock</p>
+          <p class="genre">Progressive pop</p>
         </div>
 
-        <!-- playlist-container  -->
-
-        <!-- divider  -->
-        <div class="divider">
-          <p class="">#</p>
-          <p>Title</p>
-
-          <p>Duration</p>
-          <p></p>
-        </div>
-
-        <!-- songs-list  -->
-
-        <div class="playlist-container">
-          <!-- 1  -->
-
-          <p class="list">1</p>
-          <div class="text-wrapper">
-            <p class="song-title">Give Life Back to Music</p>
-            <p class="artist-title">Daft Punk</p>
+        <div class="artists-wrapper">
+          <div class="artist">
+            <img src="../assets/images/punk-artist.png" alt="Daft Punk" />
+            <p>Daft Punk</p>
           </div>
-          <div class="duration">4:35</div>
-          <input type="checkbox" id="heart-icon-1" />
-          <label for="heart-icon-1" class="heart-label"> </label>
-
-          <!-- 2  -->
-          <p class="list">2</p>
-          <div class="text-wrapper">
-            <p class="song-title">The Game of Love</p>
-            <p class="artist-title">Daft Punk, Julian Casablancas</p>
+          <div class="artist">
+            <img src="../assets/images/pharrel-wlliams.png" alt="Pharrel Wlliams" />
+            <p>Pharrell Williams</p>
           </div>
-          <div class="duration">5:37</div>
-          <input type="checkbox" id="heart-icon-2" />
-          <label for="heart-icon-2" class="heart-label"> </label>
-
-          <!-- 3  -->
-          <p class="list">3</p>
-          <div class="text-wrapper">
-            <p class="song-title">Giorgio by Moroder</p>
-            <p class="artist-title">Gorillaz</p>
-          </div>
-          <div class="duration">3:53</div>
-          <input type="checkbox" id="heart-icon-3" />
-          <label for="heart-icon-3" class="heart-label"> </label>
-
-          <!-- 4  -->
-
-          <p class="list">4</p>
-          <div class="text-wrapper">
-            <p class="song-title">Within</p>
-            <p class="artist-title">Soft Cell</p>
-          </div>
-          <div class="duration">2:33</div>
-          <input type="checkbox" id="heart-icon-4" />
-          <label for="heart-icon-4" class="heart-label"> </label>
-
-          <!-- 5  -->
-
-          <p class="list">5</p>
-          <div class="text-wrapper">
-            <p class="song-title">Instant Crush (feat. Julian Casablancas)</p>
-            <p class="artist-title">Daft Punk</p>
-          </div>
-          <div class="duration">5:20</div>
-          <input type="checkbox" id="heart-icon-5" />
-          <label for="heart-icon-5" class="heart-label"> </label>
-
-          <!-- 6  -->
-          <p class="list">6</p>
-          <div class="text-wrapper">
-            <p class="song-title">Electric Feel</p>
-            <p class="artist-title">MGMT</p>
-          </div>
-          <div class="duration">3:49</div>
-          <input type="checkbox" id="heart-icon-6" />
-          <label for="heart-icon-6" class="heart-label"> </label>
-
-          <!-- 7  -->
-
-          <p class="list">7</p>
-          <div class="text-wrapper">
-            <p class="song-title">Give Life Back to Music</p>
-            <p class="artist-title">Daft Punk</p>
-          </div>
-          <div class="duration">4:35</div>
-          <input type="checkbox" id="heart-icon-7" />
-          <label for="heart-icon-7" class="heart-label"> </label>
-
-          <!-- 8  -->
-
-          <p class="list">8</p>
-          <div class="text-wrapper">
-            <p class="song-title">Give Life Back to Music</p>
-            <p class="artist-title">Daft Punk</p>
-          </div>
-          <div class="duration">4:35</div>
-          <input type="checkbox" id="heart-icon-8" />
-          <label for="heart-icon-8" class="heart-label"> </label>
-
-          <!-- 9  -->
-          <p class="list">9</p>
-          <div class="text-wrapper">
-            <p class="song-title">Give Life Back to Music</p>
-            <p class="artist-title">Daft Punk</p>
-          </div>
-          <div class="duration">4:35</div>
-          <input type="checkbox" id="heart-icon-9" />
-          <label for="heart-icon-9" class="heart-label"> </label>
-        </div>
-
-        <!-- main-right-column  -->
-
-        <div class="album-cover">
-          <img
-            src="../assets/images/punk-black-cover.png"
-            alt="Duft Punk cover photo"
-          />
-          <div class="genre-wrapper">
-            <p class="genre">Funk</p>
-            <p class="genre">Electronic music</p>
-            <p class="genre">Disco</p>
-            <p class="genre">Soft Rock</p>
-            <p class="genre">Progressive pop</p>
-          </div>
-
-          <div class="artists-wrapper">
-            <div class="artist">
-              <img src="../assets/images/punk-artist.png" alt="Daft Punk" />
-              <p>Daft Punk</p>
-            </div>
-            <div class="artist">
-              <img
-                src="../assets/images/pharrel-wlliams.png"
-                alt="Pharrel Wlliams"
-              />
-              <p>Pharrell Williams</p>
-            </div>
-            <div class="artist">
-              <img src="../assets/images/nile-rodgers.png" alt="Nile Rodgers" />
-              <p>Nile Rodgers</p>
-            </div>
+          <div class="artist">
+            <img src="../assets/images/nile-rodgers.png" alt="Nile Rodgers" />
+            <p>Nile Rodgers</p>
           </div>
         </div>
-      </section>
-    </main>
+      </div>
+    </section>
+  </main>
 
-    <footer class="player-bar">
+  <footer class="player-bar">
     <div class="player-left-container">
       <div class="player-controls">
         <div class="player-buttons">
@@ -400,5 +394,6 @@
       </button>
     </div>
   </footer>
-  </body>
+</body>
+
 </html>

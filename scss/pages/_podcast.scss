@@ -13,11 +13,7 @@ h4 {
 }
 
 .main-content-podcast {
-  background-image: linear-gradient(
-    180deg,
-    rgba(165, 96, 42, 0.47) 0%,
-    rgba(6, 6, 6, 0.47) 100%
-  );
+  background-image: linear-gradient(180deg, rgba(165, 96, 42, 0.47) 0%, rgba(6, 6, 6, 0.47) 100%);
   min-height: 100vh;
   padding: variables.$page-padding;
   border-radius: 1rem;
@@ -144,8 +140,7 @@ h4 {
 
   .button-hovers {
     :hover {
-      filter: brightness(2) invert(0) contrast(4)
-        drop-shadow(0 0 1.5px variables.$color-primary);
+      filter: brightness(2) invert(0) contrast(4) drop-shadow(0 0 1.5px variables.$color-primary);
     }
   }
   .episode-numbers {

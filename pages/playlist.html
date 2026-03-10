@@ -1,13 +1,15 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/main.css" />
-    <title>Spotify - Playlist</title>
-  </head>
-  <body>
-    <aside class="sidebar">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../css/main.css" />
+  <title>Spotify - Playlist</title>
+</head>
+
+<body>
+  <aside class="sidebar">
     <h2 class="sidebar-title">
       <img src="../assets/icons/library-icon.svg" alt="library" />My Library
     </h2>
@@ -86,7 +88,7 @@
     </nav>
   </aside>
 
-    <header class="top-header">
+  <header class="top-header">
     <nav class="header-nav">
       <a href="../index.html" class="header-nav-link">
         <img src="../assets/icons/home-icon.svg" alt="home" />
@@ -120,303 +122,259 @@
     </div>
   </header>
 
-    <main class="main-content">
-      <!-- main-content
+  <main class="main-content">
+    <!-- main-content
       grid-structure -->
 
-      <div class="main-content-playlist">
-        <div class="header">
-          <div class="mobile-header">
-            <div class="mobile-search">
-              <input
-                type="search"
-                name=""
-                id="mobile-search"
-                placeholder="Search playlist"
-              />
-              <button type="submit">
-                <img src="../assets/icons/search-icon.svg" alt="search" />
-              </button>
+    <div class="main-content-playlist">
+      <div class="header">
+        <div class="mobile-header">
+          <div class="mobile-search">
+            <input type="search" name="" id="mobile-search" placeholder="Search playlist" />
+            <button type="submit">
+              <img src="../assets/icons/search-icon.svg" alt="search" />
+            </button>
+          </div>
+
+          <img src="../assets/icons/alignment.svg" alt="sort" />
+        </div>
+        <div class="mobile-playlist-cover-container">
+          <img src="../assets/images/daft-punk-cover.svg" alt="Daft Punk Mix" class="mobile-playlist-cover" />
+        </div>
+
+        <h1>Daft Punk Mix</h1>
+        <div class="header-info">
+          <p>By <span class="highlight">Spotify</span></p>
+          <div class="dot"></div>
+          <p>50 songs</p>
+          <div class="dot"></div>
+          <p>3 hr 30 min</p>
+        </div>
+        <div class="header-actions">
+          <div class="header-actions-left">
+            <!-- new actions for mobile left side  -->
+
+            <div class="mobile-left-actions">
+              <a href="#" class="button-hovers">
+                <img src="../assets/icons/add-album-icon.svg" alt="add" />
+              </a>
+              <a href="#" class="button-hovers">
+                <img src="../assets/icons/unknown-icon.png" alt="more options" />
+              </a>
+
+              <a href="#" class="button-hovers">
+                <img src="../assets/icons/download.svg" alt="download" />
+              </a>
+              <a href="#" class="button-hovers">
+                <img src="../assets/icons/dots-icon.svg" alt="more actions" />
+              </a>
             </div>
 
-            <img src="../assets/icons/alignment.svg" alt="sort" />
-          </div>
-          <div class="mobile-playlist-cover-container">
-            <img
-              src="../assets/images/daft-punk-cover.svg"
-              alt="Daft Punk Mix"
-              class="mobile-playlist-cover"
-            />
-          </div>
+            <!-- green and shuffle  -->
 
-          <h1>Daft Punk Mix</h1>
-          <div class="header-info">
-            <p>By <span class="highlight">Spotify</span></p>
-            <div class="dot"></div>
-            <p>50 songs</p>
-            <div class="dot"></div>
-            <p>3 hr 30 min</p>
-          </div>
-          <div class="header-actions">
-            <div class="header-actions-left">
-              <!-- new actions for mobile left side  -->
-
-              <div class="mobile-left-actions">
-                <a href="#" class="button-hovers">
-                  <img src="../assets/icons/add-album-icon.svg" alt="add" />
-                </a>
-                <a href="#" class="button-hovers">
-                  <img src="../assets/icons/unknown-icon.png" alt="more options" />
-                </a>
-
-                <a href="#" class="button-hovers">
-                  <img src="../assets/icons/download.svg" alt="download" />
-                </a>
-                <a href="#" class="button-hovers">
-                  <img src="../assets/icons/dots-icon.svg" alt="more actions" />
-                </a>
-              </div>
-
-              <!-- green and shuffle  -->
-
-              <div class="actions-reverse">
-                <a href="#">
-                  <img src="../assets/icons/green-start-button.png" alt="play" />
-                </a>
-                <a href="#" class="button-hovers">
-                  <img src="../assets/icons/shuffle-icon.svg" alt="shuffle" />
-                </a>
-              </div>
-
-              <div class="mobile-none-actions">
-                <!-- mid actions  -->
-                <a href="#" class="button-hovers">
-                  <img src="../assets/icons/plus-icon.svg" alt="add" />
-                </a>
-                <a href="#" class="button-hovers">
-                  <img src="../assets/icons/unknown-icon.png" alt="more options" />
-                </a>
-                <a href="#" class="button-hovers">
-                  <img src="../assets/icons/download.svg" alt="download" />
-                </a>
-                <a href="#" class="button-hovers">
-                  <img src="../assets/icons/share.svg" alt="share" />
-                </a>
-                <a href="#" class="button-hovers">
-                  <img src="../assets/icons/dots-icon.svg" alt="more actions" />
-                </a>
-              </div>
+            <div class="actions-reverse">
+              <a href="#">
+                <img src="../assets/icons/green-start-button.png" alt="play" />
+              </a>
+              <a href="#" class="button-hovers">
+                <img src="../assets/icons/shuffle-icon.svg" alt="shuffle" />
+              </a>
             </div>
-            <!-- search action right on desktop  -->
-            <div class="header-actions-right">
-              <a href="">
-                <img src="../assets/icons/search-icon.svg" alt="search" />
+
+            <div class="mobile-none-actions">
+              <!-- mid actions  -->
+              <a href="#" class="button-hovers">
+                <img src="../assets/icons/plus-icon.svg" alt="add" />
+              </a>
+              <a href="#" class="button-hovers">
+                <img src="../assets/icons/unknown-icon.png" alt="more options" />
+              </a>
+              <a href="#" class="button-hovers">
+                <img src="../assets/icons/download.svg" alt="download" />
+              </a>
+              <a href="#" class="button-hovers">
+                <img src="../assets/icons/share.svg" alt="share" />
+              </a>
+              <a href="#" class="button-hovers">
+                <img src="../assets/icons/dots-icon.svg" alt="more actions" />
               </a>
             </div>
           </div>
-        </div>
-
-        <!-- playlist  -->
-        <div class="divider">
-          <p class="">#</p>
-          <p>Title</p>
-          <p>Album</p>
-          <p>Duration</p>
-          <p></p>
-        </div>
-        <!-- grid rows -->
-        <div class="playlist-container">
-          <!-- 1  -->
-          <p class="list">1</p>
-          <figure class="title-wrapper">
-            <img src="../assets/images/duft-punk-small.png" alt="album cover" />
-
-            <figcaption class="text-wrapper">
-              <p class="song-title">Get Lucky</p>
-              <p class="artist-title">Daft Punk</p>
-            </figcaption>
-          </figure>
-          <div class="album-name">
-            <p>Random Access Memories</p>
-          </div>
-          <div class="duration">
-            <p>4:35</p>
-          </div>
-          <img
-            src="../assets/icons/heart-png.png"
-            alt="like"
-            class="favourite-icon"
-          />
-
-          <!-- 2  -->
-          <p class="list">2</p>
-          <figure class="title-wrapper">
-            <img src="../assets/images/duft-punk-small.png" alt="album cover" />
-
-            <figcaption class="text-wrapper">
-              <p class="song-title">Instant Crush</p>
-              <p class="artist-title">Daft Punk, Julian Casablancas</p>
-            </figcaption>
-          </figure>
-          <div class="album-name">
-            <p>Random Access Memories</p>
-          </div>
-          <div class="duration">
-            <p>5:37</p>
-          </div>
-          <img
-            src="../assets/icons/heart-png.png"
-            alt="like"
-            class="favourite-icon"
-          />
-
-          <!-- 3  -->
-          <p class="list">3</p>
-          <figure class="title-wrapper">
-            <img src="../assets/images/gorillaz.png" alt="Gorillaz cover" />
-
-            <figcaption class="text-wrapper">
-              <p class="song-title">On Melancholy Hill</p>
-              <p class="artist-title">Gorillaz</p>
-            </figcaption>
-          </figure>
-          <div class="album-name">
-            <p>Plastic Beach</p>
-          </div>
-          <div class="duration">
-            <p>3:53</p>
-          </div>
-          <img
-            src="../assets/icons/heart-png.png"
-            alt="like"
-            class="favourite-icon"
-          />
-
-          <!-- 4  -->
-
-          <p class="list">4</p>
-          <figure class="title-wrapper">
-            <img src="../assets/images/soft-cell.png" alt="Soft Cell cover" />
-
-            <figcaption class="text-wrapper">
-              <p class="song-title">Tainted Love</p>
-              <p class="artist-title">Soft Cell</p>
-            </figcaption>
-          </figure>
-          <div class="album-name">
-            <p>Non-Stop Erotic Cabaret</p>
-          </div>
-          <div class="duration">
-            <p>2:33</p>
-          </div>
-          <img
-            src="../assets/icons/heart-png.png"
-            alt="like"
-            class="favourite-icon"
-          />
-          <!-- 5  -->
-
-          <p class="list">5</p>
-          <figure class="title-wrapper">
-            <img
-              src="../assets/images/punk-title-cover.png"
-              alt="Daft Punk cover"
-            />
-
-            <figcaption class="text-wrapper">
-              <p class="song-title">One More Time</p>
-              <p class="artist-title">Daft Punk</p>
-            </figcaption>
-          </figure>
-          <div class="album-name">
-            <p>Discovery</p>
-          </div>
-          <div class="duration">
-            <p>5:20</p>
-          </div>
-          <img
-            src="../assets/icons/heart-png.png"
-            alt="like"
-            class="favourite-icon"
-          />
-
-          <!-- 6  -->
-          <p class="list">6</p>
-          <figure class="title-wrapper">
-            <img src="../assets/images/mgmt-cover.png" alt=">MGMT cover" />
-
-            <figcaption class="text-wrapper">
-              <p class="song-title">Oracular Spectacular</p>
-              <p class="artist-title">MGMT</p>
-            </figcaption>
-          </figure>
-          <div class="album-name">
-            <p>Oracular Spectacular</p>
-          </div>
-          <div class="duration">
-            <p>3:49</p>
-          </div>
-          <img
-            src="../assets/icons/heart-png.png"
-            alt="like"
-            class="favourite-icon"
-          />
-          <!-- 7  -->
-          <p class="list">7</p>
-          <figure class="title-wrapper">
-            <img src="../assets/images/duft-punk-small.png" alt="album cover" />
-
-            <figcaption class="text-wrapper">
-              <p class="song-title">Give Life Back to Music</p>
-              <p class="artist-title">Daft Punk</p>
-            </figcaption>
-          </figure>
-          <div class="album-name">
-            <p>Random Access Memories</p>
-          </div>
-          <div class="duration">
-            <p>4:35</p>
-          </div>
-          <img
-            src="../assets/icons/heart-png.png"
-            alt="like"
-            class="favourite-icon"
-          />
-        </div>
-
-        <!-- right grid section for artist -->
-        <div class="album-cover">
-          <img
-            src="../assets/images/daft-punk-cover.svg"
-            alt="Daft Punk Mix"
-            class="big-cover"
-          />
-          <div class="genre-wrapper">
-            <p class="genre">Funk</p>
-            <p class="genre">Electronic music</p>
-            <p class="genre">Disco</p>
-            <p class="genre">Soft Rock</p>
-            <p class="genre">Progressive pop</p>
-          </div>
-          <div class="artists-wrapper">
-            <div class="artist">
-              <img src="../assets/images/punk-artist.png" alt="Daft Punk" />
-              <p>Daft Punk</p>
-            </div>
-            <div class="artist">
-              <img src="../assets/images/pharrel-wlliams.png" alt="Pharrell Williams" />
-              <p>Pharrell Williams</p>
-            </div>
-            <div class="artist">
-              <img src="../assets/images/nile-rodgers.png" alt="Nile Rodgers" />
-              <p>Nile Rodgers</p>
-            </div>
+          <!-- search action right on desktop  -->
+          <div class="header-actions-right">
+            <a href="">
+              <img src="../assets/icons/search-icon.svg" alt="search" />
+            </a>
           </div>
         </div>
       </div>
-    </main>
 
-    <footer class="player-bar">
+      <!-- playlist  -->
+      <div class="divider">
+        <p class="">#</p>
+        <p>Title</p>
+        <p>Album</p>
+        <p>Duration</p>
+        <p></p>
+      </div>
+      <!-- grid rows -->
+      <div class="playlist-container">
+        <!-- 1  -->
+        <p class="list">1</p>
+        <figure class="title-wrapper">
+          <img src="../assets/images/duft-punk-small.png" alt="album cover" />
+
+          <figcaption class="text-wrapper">
+            <p class="song-title">Get Lucky</p>
+            <p class="artist-title">Daft Punk</p>
+          </figcaption>
+        </figure>
+        <div class="album-name">
+          <p>Random Access Memories</p>
+        </div>
+        <div class="duration">
+          <p>4:35</p>
+        </div>
+        <img src="../assets/icons/heart-png.png" alt="like" class="favourite-icon" />
+
+        <!-- 2  -->
+        <p class="list">2</p>
+        <figure class="title-wrapper">
+          <img src="../assets/images/duft-punk-small.png" alt="album cover" />
+
+          <figcaption class="text-wrapper">
+            <p class="song-title">Instant Crush</p>
+            <p class="artist-title">Daft Punk, Julian Casablancas</p>
+          </figcaption>
+        </figure>
+        <div class="album-name">
+          <p>Random Access Memories</p>
+        </div>
+        <div class="duration">
+          <p>5:37</p>
+        </div>
+        <img src="../assets/icons/heart-png.png" alt="like" class="favourite-icon" />
+
+        <!-- 3  -->
+        <p class="list">3</p>
+        <figure class="title-wrapper">
+          <img src="../assets/images/gorillaz.png" alt="Gorillaz cover" />
+
+          <figcaption class="text-wrapper">
+            <p class="song-title">On Melancholy Hill</p>
+            <p class="artist-title">Gorillaz</p>
+          </figcaption>
+        </figure>
+        <div class="album-name">
+          <p>Plastic Beach</p>
+        </div>
+        <div class="duration">
+          <p>3:53</p>
+        </div>
+        <img src="../assets/icons/heart-png.png" alt="like" class="favourite-icon" />
+
+        <!-- 4  -->
+
+        <p class="list">4</p>
+        <figure class="title-wrapper">
+          <img src="../assets/images/soft-cell.png" alt="Soft Cell cover" />
+
+          <figcaption class="text-wrapper">
+            <p class="song-title">Tainted Love</p>
+            <p class="artist-title">Soft Cell</p>
+          </figcaption>
+        </figure>
+        <div class="album-name">
+          <p>Non-Stop Erotic Cabaret</p>
+        </div>
+        <div class="duration">
+          <p>2:33</p>
+        </div>
+        <img src="../assets/icons/heart-png.png" alt="like" class="favourite-icon" />
+        <!-- 5  -->
+
+        <p class="list">5</p>
+        <figure class="title-wrapper">
+          <img src="../assets/images/punk-title-cover.png" alt="Daft Punk cover" />
+
+          <figcaption class="text-wrapper">
+            <p class="song-title">One More Time</p>
+            <p class="artist-title">Daft Punk</p>
+          </figcaption>
+        </figure>
+        <div class="album-name">
+          <p>Discovery</p>
+        </div>
+        <div class="duration">
+          <p>5:20</p>
+        </div>
+        <img src="../assets/icons/heart-png.png" alt="like" class="favourite-icon" />
+
+        <!-- 6  -->
+        <p class="list">6</p>
+        <figure class="title-wrapper">
+          <img src="../assets/images/mgmt-cover.png" alt=">MGMT cover" />
+
+          <figcaption class="text-wrapper">
+            <p class="song-title">Oracular Spectacular</p>
+            <p class="artist-title">MGMT</p>
+          </figcaption>
+        </figure>
+        <div class="album-name">
+          <p>Oracular Spectacular</p>
+        </div>
+        <div class="duration">
+          <p>3:49</p>
+        </div>
+        <img src="../assets/icons/heart-png.png" alt="like" class="favourite-icon" />
+        <!-- 7  -->
+        <p class="list">7</p>
+        <figure class="title-wrapper">
+          <img src="../assets/images/duft-punk-small.png" alt="album cover" />
+
+          <figcaption class="text-wrapper">
+            <p class="song-title">Give Life Back to Music</p>
+            <p class="artist-title">Daft Punk</p>
+          </figcaption>
+        </figure>
+        <div class="album-name">
+          <p>Random Access Memories</p>
+        </div>
+        <div class="duration">
+          <p>4:35</p>
+        </div>
+        <img src="../assets/icons/heart-png.png" alt="like" class="favourite-icon" />
+      </div>
+
+      <!-- right grid section for artist -->
+      <div class="album-cover">
+        <img src="../assets/images/daft-punk-cover.svg" alt="Daft Punk Mix" class="big-cover" />
+        <div class="genre-wrapper">
+          <p class="genre">Funk</p>
+          <p class="genre">Electronic music</p>
+          <p class="genre">Disco</p>
+          <p class="genre">Soft Rock</p>
+          <p class="genre">Progressive pop</p>
+        </div>
+        <div class="artists-wrapper">
+          <div class="artist">
+            <img src="../assets/images/punk-artist.png" alt="Daft Punk" />
+            <p>Daft Punk</p>
+          </div>
+          <div class="artist">
+            <img src="../assets/images/pharrel-wlliams.png" alt="Pharrell Williams" />
+            <p>Pharrell Williams</p>
+          </div>
+          <div class="artist">
+            <img src="../assets/images/nile-rodgers.png" alt="Nile Rodgers" />
+            <p>Nile Rodgers</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="player-bar">
     <div class="player-left-container">
       <div class="player-controls">
         <div class="player-buttons">
@@ -485,5 +443,6 @@
       </button>
     </div>
   </footer>
-  </body>
+</body>
+
 </html>
