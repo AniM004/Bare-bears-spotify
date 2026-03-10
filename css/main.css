@@ -956,6 +956,9 @@ html {
   border-radius: 100%;
   background-color: #898989;
 }
+.main-container-album .button-hovers :hover {
+  filter: brightness(5) invert(0) contrast(4) drop-shadow(0 0 1.5px #1ED760);
+}
 .main-container-album .divider {
   font-size: 1.4rem;
   font-weight: 400;
@@ -1038,6 +1041,70 @@ html {
   width: 6.1rem;
   height: 6.1rem;
   border-radius: 100%;
+}
+.main-container-album #heart-icon-1,
+.main-container-album #heart-icon-2,
+.main-container-album #heart-icon-3,
+.main-container-album #heart-icon-4,
+.main-container-album #heart-icon-5,
+.main-container-album #heart-icon-6,
+.main-container-album #heart-icon-7,
+.main-container-album #heart-icon-8,
+.main-container-album #heart-icon-9 {
+  display: none;
+}
+.main-container-album .heart-label {
+  background-image: url(../../assets/icons/heart-svg.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 20.5px;
+  cursor: pointer;
+}
+.main-container-album #heart-icon-1:checked + .heart-label {
+  background-image: url("../../assets/icons/green heart.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.main-container-album #heart-icon-2:checked + .heart-label {
+  background-image: url("../../assets/icons/green heart.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.main-container-album #heart-icon-3:checked + .heart-label {
+  background-image: url("../../assets/icons/green heart.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.main-container-album #heart-icon-4:checked + .heart-label {
+  background-image: url("../../assets/icons/green heart.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.main-container-album #heart-icon-5:checked + .heart-label {
+  background-image: url("../../assets/icons/green heart.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.main-container-album #heart-icon-6:checked + .heart-label {
+  background-image: url("../../assets/icons/green heart.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.main-container-album #heart-icon-7:checked + .heart-label {
+  background-image: url("../../assets/icons/green heart.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.main-container-album #heart-icon-8:checked + .heart-label {
+  background-image: url("../../assets/icons/green heart.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.main-container-album #heart-icon-9:checked + .heart-label {
+  background-image: url("../../assets/icons/green heart.png");
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 * {
@@ -1420,10 +1487,10 @@ h4 {
 .main-content-podcast .episode-description p {
   white-space: nowrap;
   display: inline-block;
-  margin: 0;
+  animation: scrolling 35s linear infinite;
 }
 .main-content-podcast .episode-description p:hover {
-  animation: scrolling 13s linear infinite;
+  animation-play-state: paused;
 }
 @keyframes scrolling {
   0% {
@@ -1513,6 +1580,9 @@ h4 {
   font-size: 1.6rem;
   font-weight: 400;
   color: #898989;
+}
+.main-content-episode .episode-about-link a:visited {
+  color: #ff7101;
 }
 
 .main-container-library {
