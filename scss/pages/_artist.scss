@@ -13,11 +13,13 @@
   //width: 100%;
   font-family: "Satoshi-Variable";
   .top-header-artist {
+    overflow-y: clip;
     //width: 100%;
     position: relative;
     height: 426px;
     background-image:
-      linear-gradient(to bottom, transparent, rgb(7, 7, 7)), url("../../assets/artist-section/header-artist.png");
+      linear-gradient(to bottom, transparent, rgb(7, 7, 7)),
+      url("../../assets/artist-section/header-artist.png");
     background-size: cover;
     background-position: center;
     margin-bottom: 20px;
