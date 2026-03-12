@@ -1,2 +1,20 @@
 @use "../abstracts/variables" as *;
 @use "../abstracts/mixins" as *;
+
+.artist-layout-content-nav {
+  svg {
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  .rotate-180 {
+    rotate: 180deg;
+  }
+  .not-actived {
+    color: rgba(255, 255, 255, 0.5);
+    &:hover {
+      color: rgba(255, 255, 255);
+    }
+  }
+}
+.actived-filter {
+}
