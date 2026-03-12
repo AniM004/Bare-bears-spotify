@@ -239,6 +239,11 @@ body {
   background: rgb(224, 224, 224);
   color: #111111;
 }
+.main-content-home .active-button a {
+  background-color: rgb(224, 224, 224);
+  color: rgb(17, 17, 17);
+  cursor: no-drop;
+}
 .main-content-home .icon-btn {
   width: 21px;
   height: 19px;
@@ -680,6 +685,8 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 0 2.1rem;
+  height: 81px;
+  margin-bottom: 180px;
 }
 .player-bar .player-left-container {
   display: flex;
@@ -829,6 +836,10 @@ body {
   border-bottom: 1px solid rgba(137, 137, 137, 0.2);
   padding-bottom: 19px;
   margin-bottom: 60px;
+  width: 98%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .main-content-artist-home .section-header-nav {
   margin-left: 30px;
@@ -843,20 +854,27 @@ body {
   color: rgb(137, 137, 137);
   font-size: 14px;
   font-weight: 500;
-  letter-spacing: 3%;
+  letter-spacing: 0.3px;
   align-items: center;
 }
 .main-content-artist-home .section-header-nav li:last-child a {
   padding: 0px;
   filter: saturate(50%);
 }
-.main-content-artist-home .section-header-nav li:last-child a:hover {
+.main-content-artist-home .section-header-nav .li-last-child:hover {
+  padding-bottom: 0;
   border-bottom: 0px;
-  filter: brightness(2) invert(0) contrast(4);
+  color: rgb(255, 255, 255);
 }
-.main-content-artist-home .section-header-nav li a:hover {
+.main-content-artist-home .section-header-nav .li-bottom a:hover {
+  padding-bottom: 24px;
   color: rgb(224, 224, 224);
   border-bottom: 2px solid #1ed760;
+}
+.main-content-artist-home .section-header-nav .actived-link a {
+  color: rgb(224, 224, 224);
+  border-bottom: 2px solid #1ed760;
+  cursor: no-drop;
 }
 .main-content-artist-home .daft-section {
   width: 100%;
@@ -1056,6 +1074,20 @@ body {
   line-height: 175%;
   letter-spacing: 3%;
   margin-top: -20px;
+}
+
+.artist-layout-content-nav svg {
+  margin-right: 10px;
+  cursor: pointer;
+}
+.artist-layout-content-nav .rotate-180 {
+  rotate: 180deg;
+}
+.artist-layout-content-nav .not-actived {
+  color: rgba(255, 255, 255, 0.5);
+}
+.artist-layout-content-nav .not-actived:hover {
+  color: rgb(255, 255, 255);
 }
 
 .main-content-search {

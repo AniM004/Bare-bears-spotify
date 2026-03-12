@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/main.css" />
+    <script src="https://unpkg.com/lucide@latest"></script>
     <title>Spotify - Artist Albums</title>
   </head>
 
@@ -182,21 +183,74 @@
         </div>
         <div class="sect-topheader-nav">
           <ul class="section-header-nav">
-            <li><a href="">Home</a></li>
-            <li><a href="">Albums</a></li>
-            <li><a href="">Singles and Eps</a></li>
-            <li><a href="">Compilations</a></li>
-            <li><a href="">Merch</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Features & More</a></li>
+            <li class="li-bottom"><a href="./artist.html">Home</a></li>
+            <li class="actived-link"><a href="#">Albums</a></li>
+            <li class="li-bottom"><a href="#">Singles and Eps</a></li>
+            <li class="li-bottom"><a href="#">Compilations</a></li>
+            <li class="li-bottom"><a href="#">Merch</a></li>
+            <li class="li-bottom"><a href="./artist-about.html">About</a></li>
+            <li class="li-bottom"><a href="#">Features & More</a></li>
             <li>
-              <a href=""
-                ><img
-                  src="../assets/artist-section/search-png.png"
-                  alt="search"
-              /></a>
+              <a href="#"
+                ><svg
+                  class="li-last-child"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-search-icon lucide-search"
+                >
+                  <path d="m21 21-4.34-4.34" />
+                  <circle cx="11" cy="11" r="8" /></svg
+              ></a>
             </li>
           </ul>
+          <div class="artist-layout-content-nav">
+            <a href="./artist-albums-list.html">
+              <svg
+                class="not-actived rotate-180"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-table-of-contents-icon lucide-table-of-contents"
+              >
+                <path d="M16 5H3" />
+                <path d="M16 12H3" />
+                <path d="M16 19H3" />
+                <path d="M21 5h.01" />
+                <path d="M21 12h.01" />
+                <path d="M21 19h.01" /></svg
+            ></a>
+            <svg
+              class="actived-filter"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-layout-grid-icon lucide-layout-grid"
+            >
+              <rect width="7" height="7" x="3" y="3" rx="1" />
+              <rect width="7" height="7" x="14" y="3" rx="1" />
+              <rect width="7" height="7" x="14" y="14" rx="1" />
+              <rect width="7" height="7" x="3" y="14" rx="1" />
+            </svg>
+          </div>
         </div>
       </div>
     </main>
@@ -279,5 +333,8 @@
         </button>
       </div>
     </footer>
+    <script>
+      lucide.createIcons();
+    </script>
   </body>
 </html>

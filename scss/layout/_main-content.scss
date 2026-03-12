@@ -48,6 +48,12 @@
     background: rgba(224, 224, 224, 1);
     color: #111111;
   }
+  .active-button a {
+    background-color: rgba(224, 224, 224, 1);
+    color: rgba(17, 17, 17, 1);
+    cursor: no-drop;
+  }
+
   .icon-btn {
     width: 21px;
     height: 19px;
