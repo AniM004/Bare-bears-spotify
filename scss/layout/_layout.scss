@@ -10,11 +10,11 @@ body {
     "sidebar header"
     "sidebar main"
     "sidebar  player";
-  height: 100vh;
+  height: calc(100vh - 2.3rem);
   background-color: $color-bg-sidebar;
   color: $color-text-primary;
   font-family: $font-family-base;
-  overflow-x: hidden;
+  overflow: hidden;
   margin: 0.3rem 0.7rem 1rem 0.7rem;
 }
 
