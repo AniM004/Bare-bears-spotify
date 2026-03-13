@@ -10,11 +10,11 @@ body {
     "sidebar header"
     "sidebar main"
     "sidebar  player";
-  height: 100vh;
+  height: calc(100vh - 2.3rem);
   background-color: $color-bg-sidebar;
   color: $color-text-primary;
   font-family: $font-family-base;
-  overflow-x: hidden;
+  overflow: hidden;
   margin: 0.3rem 0.7rem 1rem 0.7rem;
 }
 
@@ -45,4 +45,33 @@ body {
   border-radius: 1rem;
   margin-top: 0.4rem;
   background-color: #333842;
+}
+
+@media (max-width: 1240px) {
+  html,
+  body {
+    height: 100vh;
+    height: 100dvh;
+    overflow: hidden;
+  }
+
+  .main-content {
+    border: none;
+    border-radius: 0;
+    padding: 1rem;
+    padding-bottom: 12rem;
+    height: 100vh;
+    height: 100dvh;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  .player-bar {
+    margin-top: 0;
+    border-radius: 0.8rem;
+  }
 }
