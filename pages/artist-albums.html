@@ -110,17 +110,27 @@
     <header class="top-header">
       <nav class="header-nav">
         <a href="../index.html" class="header-nav-link">
-          <img src="../assets/icons/home-icon.svg" alt="home" />
+          <img class="icon-default" src="../assets/icons/home-icon.svg" alt="home" />
+          <img class="icon-active" src="../assets/icons/home-icon-active.svg" alt="home" />
           Home
         </a>
-        <a href="#" class="header-nav-link">
-          <img src="../assets/icons/discover-icon.svg" alt="discover" />
+        <a href="./discover.html" class="header-nav-link">
+          <img class="icon-default" src="../assets/icons/discover-icon.svg" alt="discover" />
+          <img class="icon-active" src="../assets/icons/discover-icon-active.svg" alt="discover" />
           Discover
         </a>
         <a href="./search.html" class="header-nav-link">
           <img src="../assets/icons/search-icon.svg" alt="search" />
           Search
         </a>
+      <a href="./library.html" class="header-nav-link mobile-only">
+        <img src="../assets/icons/library-icon.svg" alt="library" />
+        Library
+      </a>
+      <a href="#" class="header-nav-link mobile-only">
+        <img src="../assets/icons/me-icon.svg" alt="me" />
+        Me
+      </a>
       </nav>
       <div class="header-actions">
         <button class="header-btn">
@@ -259,7 +269,8 @@
         <div class="player-controls">
           <div class="player-buttons">
             <button class="player-btn">
-              <img src="../assets/icons/player-pause-icon.svg" alt="pause" />
+              <img class="desktop-only" src="../assets/icons/player-pause-icon.svg" alt="pause" />
+            <img class="mobile-only" src="../assets/icons/play-icon.svg" alt="play" />
             </button>
             <button class="player-btn">
               <img
@@ -300,7 +311,7 @@
             alt="album cover"
           />
           <div class="player-text">
-            <span class="player-title">Get Lucky</span>
+            <span class="player-title">Get Lucky<span class="player-title-extended"> (feat. Pharrell Williams)</span></span>
             <span class="player-artist">Daft Punk</span>
             <span class="player-album">Random Access Memories</span>
           </div>
@@ -329,10 +340,13 @@
           <img src="../assets/icons/player-dj-icon.svg" alt="dj" />
         </button>
         <button class="player-btn">
-          <img src="../assets/icons/player-queue-icon.svg" alt="queue" />
-        </button>
-      </div>
-    </footer>
+        <img src="../assets/icons/player-queue-icon.svg" alt="queue" />
+      </button>
+      <button class="player-btn mobile-only">
+        <img src="../assets/icons/play-icon.svg" alt="play" />
+      </button>
+    </div>
+  </footer>
     <script>
       lucide.createIcons();
     </script>
