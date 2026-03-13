@@ -63,6 +63,15 @@
       justify-content: center;
       gap: 1rem;
 
+      .player-cover {
+        transition: transform 0.2s ease;
+        cursor: pointer;
+
+        &:hover {
+          transform: scale(1.08);
+        }
+      }
+
       .player-text {
         display: flex;
         flex-direction: column;
@@ -100,6 +109,24 @@
     background: transparent;
     border: none;
     cursor: pointer;
+
+    img {
+      transition: filter 0.2s ease, transform 0.2s ease;
+    }
+
+    &:hover img {
+      filter: brightness(0) invert(1);
+    }
+
+    &:hover img[alt="pause"] {
+      filter: none;
+      transform: scale(1.15);
+    }
+
+    &:hover img[alt="dj"] {
+      filter: none;
+      opacity: 0.8;
+    }
   }
 }
 

@@ -848,6 +848,13 @@ body {
   justify-content: center;
   gap: 1rem;
 }
+.player-bar .player-left-container .player-info .player-cover {
+  transition: transform 0.2s ease;
+  cursor: pointer;
+}
+.player-bar .player-left-container .player-info .player-cover:hover {
+  transform: scale(1.08);
+}
 .player-bar .player-left-container .player-info .player-text {
   display: flex;
   flex-direction: column;
@@ -879,6 +886,20 @@ body {
   background: transparent;
   border: none;
   cursor: pointer;
+}
+.player-bar .player-btn img {
+  transition: filter 0.2s ease, transform 0.2s ease;
+}
+.player-bar .player-btn:hover img {
+  filter: brightness(0) invert(1);
+}
+.player-bar .player-btn:hover img[alt=pause] {
+  filter: none;
+  transform: scale(1.15);
+}
+.player-bar .player-btn:hover img[alt=dj] {
+  filter: none;
+  opacity: 0.8;
 }
 
 @media (max-width: 1240px) {
