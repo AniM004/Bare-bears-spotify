@@ -22,6 +22,20 @@
       font-weight: 400;
       color: rgba(137, 137, 137, 1);
       cursor: pointer;
+      transition: color 0.2s ease;
+
+      img {
+        transition: filter 0.2s ease;
+      }
+    }
+
+    &:hover h2,
+    &.active h2 {
+      color: #fff;
+
+      img {
+        filter: brightness(0) invert(1);
+      }
     }
   }
 

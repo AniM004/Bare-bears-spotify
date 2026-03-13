@@ -27,13 +27,41 @@
         display: none;
       }
 
+      .icon-active {
+        display: none;
+      }
+
       &:hover {
         color: $color-text-primary;
+
+        .icon-default {
+          display: none;
+        }
+
+        .icon-active {
+          display: block;
+        }
+
+        img[alt="search"] {
+          filter: brightness(0) invert(1);
+        }
       }
 
       &.active {
         background-color: $color-bg-player;
         color: $color-text-primary;
+
+        .icon-default {
+          display: none;
+        }
+
+        .icon-active {
+          display: block;
+        }
+
+        img[alt="search"] {
+          filter: brightness(0) invert(1);
+        }
       }
     }
   }
@@ -49,7 +77,16 @@
       border: none;
       cursor: pointer;
 
-      &:hover {
+      img {
+        transition: filter 0.2s ease;
+      }
+
+      &:hover img {
+        filter: brightness(0) invert(1);
+      }
+
+      &:last-child:hover img {
+        filter: none;
         opacity: 0.8;
       }
     }
@@ -90,6 +127,13 @@
 
         &.mobile-only {
           display: flex;
+
+          &:hover,
+          &.active {
+            img {
+              filter: brightness(0) invert(1);
+            }
+          }
         }
 
         img {

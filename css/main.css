@@ -149,6 +149,16 @@ body {
   font-weight: 400;
   color: rgb(137, 137, 137);
   cursor: pointer;
+  transition: color 0.2s ease;
+}
+.sidebar .sidebar-title h2 img {
+  transition: filter 0.2s ease;
+}
+.sidebar .sidebar-title:hover h2, .sidebar .sidebar-title.active h2 {
+  color: #fff;
+}
+.sidebar .sidebar-title:hover h2 img, .sidebar .sidebar-title.active h2 img {
+  filter: brightness(0) invert(1);
 }
 .sidebar .sidebar-nav {
   margin-top: 1.4rem;
@@ -214,12 +224,33 @@ body {
 .top-header .header-nav .header-nav-link.mobile-only {
   display: none;
 }
+.top-header .header-nav .header-nav-link .icon-active {
+  display: none;
+}
 .top-header .header-nav .header-nav-link:hover {
   color: #FFFFFF;
+}
+.top-header .header-nav .header-nav-link:hover .icon-default {
+  display: none;
+}
+.top-header .header-nav .header-nav-link:hover .icon-active {
+  display: block;
+}
+.top-header .header-nav .header-nav-link:hover img[alt=search] {
+  filter: brightness(0) invert(1);
 }
 .top-header .header-nav .header-nav-link.active {
   background-color: #181818;
   color: #FFFFFF;
+}
+.top-header .header-nav .header-nav-link.active .icon-default {
+  display: none;
+}
+.top-header .header-nav .header-nav-link.active .icon-active {
+  display: block;
+}
+.top-header .header-nav .header-nav-link.active img[alt=search] {
+  filter: brightness(0) invert(1);
 }
 .top-header .header-actions {
   display: flex;
@@ -232,7 +263,14 @@ body {
   border: none;
   cursor: pointer;
 }
-.top-header .header-actions .header-btn:hover {
+.top-header .header-actions .header-btn img {
+  transition: filter 0.2s ease;
+}
+.top-header .header-actions .header-btn:hover img {
+  filter: brightness(0) invert(1);
+}
+.top-header .header-actions .header-btn:last-child:hover img {
+  filter: none;
   opacity: 0.8;
 }
 
@@ -269,6 +307,9 @@ body {
   }
   .top-header .header-nav .header-nav-link.mobile-only {
     display: flex;
+  }
+  .top-header .header-nav .header-nav-link.mobile-only:hover img, .top-header .header-nav .header-nav-link.mobile-only.active img {
+    filter: brightness(0) invert(1);
   }
   .top-header .header-nav .header-nav-link img {
     width: 100%;
