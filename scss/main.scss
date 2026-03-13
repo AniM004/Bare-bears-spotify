@@ -25,11 +25,35 @@
 @use "./pages/library";
 @use "./pages/library-list";
 
-@media (max-width: 768px) {
+.mobile-only {
+  display: none;
+}
+
+@media (max-width: 1240px) {
+  .mobile-only {
+    display: inline;
+  }
+  .desktop-only {
+    display: none;
+  }
   body {
-    display: contents;
+    display: block;
+    margin: 0;
   }
   .sidebar {
     display: none;
+  }
+  .top-header {
+    grid-area: unset;
+  }
+  .main-content {
+    grid-area: unset;
+
+    > * {
+      min-height: auto;
+    }
+  }
+  .player-bar {
+    grid-area: unset;
   }
 }

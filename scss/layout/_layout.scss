@@ -46,3 +46,32 @@ body {
   margin-top: 0.4rem;
   background-color: #333842;
 }
+
+@media (max-width: 1240px) {
+  html,
+  body {
+    height: 100vh;
+    height: 100dvh;
+    overflow: hidden;
+  }
+
+  .main-content {
+    border: none;
+    border-radius: 0;
+    padding: 1rem;
+    padding-bottom: 12rem;
+    height: 100vh;
+    height: 100dvh;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  .player-bar {
+    margin-top: 0;
+    border-radius: 0.8rem;
+  }
+}

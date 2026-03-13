@@ -102,6 +102,14 @@
         <img src="../assets/icons/search-icon.svg" alt="search" />
         Search
       </a>
+      <a href="./library.html" class="header-nav-link mobile-only">
+        <img src="../assets/icons/library-icon.svg" alt="library" />
+        Library
+      </a>
+      <a href="#" class="header-nav-link mobile-only">
+        <img src="../assets/icons/me-icon.svg" alt="me" />
+        Me
+      </a>
     </nav>
     <div class="header-actions">
       <button class="header-btn">
@@ -379,7 +387,8 @@
       <div class="player-controls">
         <div class="player-buttons">
           <button class="player-btn">
-            <img src="../assets/icons/player-pause-icon.svg" alt="pause" />
+            <img class="desktop-only" src="../assets/icons/player-pause-icon.svg" alt="pause" />
+            <img class="mobile-only" src="../assets/icons/play-icon.svg" alt="play" />
           </button>
           <button class="player-btn">
             <img src="../assets/icons/player-previous-icon.svg" alt="previous" />
@@ -410,7 +419,7 @@
       <div class="player-info">
         <img class="player-cover" src="../assets/images/duft-punk-small.png" alt="album cover" />
         <div class="player-text">
-          <span class="player-title">Get Lucky</span>
+          <span class="player-title">Get Lucky<span class="player-title-extended"> (feat. Pharrell Williams)</span></span>
           <span class="player-artist">Daft Punk</span>
           <span class="player-album">Random Access Memories</span>
         </div>
@@ -440,6 +449,9 @@
       </button>
       <button class="player-btn">
         <img src="../assets/icons/player-queue-icon.svg" alt="queue" />
+      </button>
+      <button class="player-btn mobile-only">
+        <img src="../assets/icons/play-icon.svg" alt="play" />
       </button>
     </div>
   </footer>
