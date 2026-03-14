@@ -1101,7 +1101,7 @@ body {
   gap: 50px;
   align-items: center;
   justify-content: center;
-  margin-bottom: 8vh;
+  margin-bottom: 16vh;
 }
 .main-content .main-content-discover .discover-slide:first-child {
   margin-top: 10vh;
