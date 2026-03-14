@@ -64,6 +64,10 @@
     }
   }
 
+  article:hover {
+    @include mixins.title-hover;
+  }
+
   figure {
     display: flex;
     flex-direction: column;
@@ -284,5 +288,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+}
+
+@media (max-width: 1240px) {
+  .main-container-library {
+    padding: 0;
+
+    .alligment-icons,
+    .add-button {
+      display: none;
+    }
   }
 }

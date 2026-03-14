@@ -282,7 +282,7 @@ body {
     left: 0;
     right: 0;
     z-index: 100;
-    background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.85) 0%, rgb(0, 0, 0));
+    background: linear-gradient(to bottom, transparent, rgb(0, 0, 0) 0%, rgb(0, 0, 0));
     border-top: none;
     padding: 0.8rem 0;
   }
@@ -2823,6 +2823,70 @@ html {
   height: 6.1rem;
   border-radius: 100%;
 }
+.main-content-playlist #heart-icon-1,
+.main-content-playlist #heart-icon-2,
+.main-content-playlist #heart-icon-3,
+.main-content-playlist #heart-icon-4,
+.main-content-playlist #heart-icon-5,
+.main-content-playlist #heart-icon-6,
+.main-content-playlist #heart-icon-7,
+.main-content-playlist #heart-icon-8,
+.main-content-playlist #heart-icon-9 {
+  display: none;
+}
+.main-content-playlist .heart-label {
+  background-image: url(../../assets/icons/heart-svg.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 20.5px;
+  cursor: pointer;
+}
+.main-content-playlist #heart-icon-1:checked + .heart-label {
+  background-image: url("../../assets/icons/green-heart.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.main-content-playlist #heart-icon-2:checked + .heart-label {
+  background-image: url("../../assets/icons/green-heart.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.main-content-playlist #heart-icon-3:checked + .heart-label {
+  background-image: url("../../assets/icons/green-heart.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.main-content-playlist #heart-icon-4:checked + .heart-label {
+  background-image: url("../../assets/icons/green-heart.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.main-content-playlist #heart-icon-5:checked + .heart-label {
+  background-image: url("../../assets/icons/green-heart.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.main-content-playlist #heart-icon-6:checked + .heart-label {
+  background-image: url("../../assets/icons/green-heart.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.main-content-playlist #heart-icon-7:checked + .heart-label {
+  background-image: url("../../assets/icons/green-heart.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.main-content-playlist #heart-icon-8:checked + .heart-label {
+  background-image: url("../../assets/icons/green-heart.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.main-content-playlist #heart-icon-9:checked + .heart-label {
+  background-image: url("../../assets/icons/green-heart.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
 
 @media (max-width: 768px) {
   .main-content-playlist {
@@ -3116,8 +3180,12 @@ h4 {
 .main-content-episode .episode-duration {
   color: #898989;
 }
-.main-content-episode .button-hovers :hover {
-  filter: brightness(2) invert(0) contrast(4) drop-shadow(0 0 1.5px #1ED760);
+.main-content-episode .button-hovers {
+  opacity: 0.7;
+}
+.main-content-episode .button-hovers:hover {
+  opacity: 1;
+  filter: brightness(1.5);
 }
 .main-content-episode .episode-video {
   background-image: url(../../assets/images/the-joe-rogan-photo.png);
@@ -3201,6 +3269,10 @@ h4 {
 }
 .main-container-library article img {
   border-radius: 0.725rem;
+}
+.main-container-library article:hover {
+  cursor: pointer;
+  filter: brightness(40%);
 }
 .main-container-library figure {
   display: flex;
@@ -3427,6 +3499,15 @@ h4 {
   align-items: center;
 }
 
+@media (max-width: 1240px) {
+  .main-container-library {
+    padding: 0;
+  }
+  .main-container-library .alligment-icons,
+  .main-container-library .add-button {
+    display: none;
+  }
+}
 .main-container-library-list {
   min-height: 100vh;
   padding: 1.2rem 2.76rem 0rem 2.5rem;
