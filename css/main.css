@@ -1101,7 +1101,7 @@ body {
   gap: 50px;
   align-items: center;
   justify-content: center;
-  margin-bottom: 4vh;
+  margin-bottom: 8vh;
 }
 .main-content .main-content-discover .discover-slide:first-child {
   margin-top: 10vh;
@@ -2417,8 +2417,12 @@ html {
   border-radius: 100%;
   background-color: #898989;
 }
-.main-container-album .button-hovers :hover {
-  filter: brightness(5) invert(0) contrast(4) drop-shadow(0 0 1.5px #1ED760);
+.main-container-album .button-hovers {
+  opacity: 0.7;
+}
+.main-container-album .button-hovers:hover {
+  opacity: 1;
+  filter: brightness(1.5);
 }
 .main-container-album .divider {
   font-size: 1.4rem;
@@ -2629,8 +2633,12 @@ html {
   align-items: center;
   gap: 1.4rem;
 }
-.main-content-playlist .button-hovers :hover {
-  filter: brightness(2) invert(0) contrast(4) drop-shadow(0 0 1.5px #1ED760);
+.main-content-playlist .button-hovers {
+  opacity: 0.7;
+}
+.main-content-playlist .button-hovers:hover {
+  opacity: 1;
+  filter: brightness(1.5);
 }
 .main-content-playlist .dot {
   height: 0.3rem;
@@ -2641,7 +2649,7 @@ html {
 .main-content-playlist .divider {
   grid-area: title;
   display: grid;
-  grid-template-columns: 1fr 7.5fr 7.5fr 1.6fr 7.5fr;
+  grid-template-columns: 1fr 8fr 8fr 2fr 7fr;
   color: #898989;
   font-size: 1.4rem;
   font-weight: 400;
@@ -2802,6 +2810,16 @@ html {
     justify-content: center;
   }
 }
+@media (max-width: 1024px) {
+  .main-content-playlist .playlist-container,
+  .main-content-playlist .divider {
+    grid-template-columns: 1fr 8fr 2fr 4fr;
+  }
+  .main-content-playlist .album-name,
+  .main-content-playlist .divide-album {
+    display: none;
+  }
+}
 h3 {
   font-size: 2rem;
   font-weight: 700;
@@ -2914,8 +2932,12 @@ h4 {
   align-items: center;
   gap: 1.4rem;
 }
-.main-content-podcast .button-hovers :hover {
-  filter: brightness(2) invert(0) contrast(4) drop-shadow(0 0 1.5px #1ED760);
+.main-content-podcast .button-hovers {
+  opacity: 0.7;
+}
+.main-content-podcast .button-hovers:hover {
+  opacity: 1;
+  filter: brightness(1.5);
 }
 .main-content-podcast .episode-numbers {
   display: flex;
@@ -3503,3 +3525,5 @@ h4 {
     grid-area: unset;
   }
 }
+
+/*# sourceMappingURL=main.css.map */

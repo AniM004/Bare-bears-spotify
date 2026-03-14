@@ -1,23 +1,6 @@
 @use "../abstracts/variables";
 @use "../abstracts/mixins";
 
-@mixin smallrct-shadow {
-  width: 133px;
-  height: 3px;
-  border-radius: 7.25px 7.25px 0 0;
-}
-
-@mixin bigrct-shadow {
-  width: 154px;
-  height: 6px;
-  border-radius: 7.25px 7.25px 0 0;
-}
-
-@mixin title-hover {
-  cursor: pointer;
-  filter: brightness(40%);
-}
-
 .main-content-home {
   background-color: #060606;
   padding: 15px 33px 46px 25px;
@@ -74,7 +57,7 @@
         font-weight: 700;
         color: rgba(224, 224, 224, 1);
         &:hover {
-          @include title-hover;
+          @include mixins.title-hover;
         }
       }
       &__btn {
@@ -85,7 +68,7 @@
         &__link img {
           cursor: pointer;
           &:hover {
-            @include title-hover;
+            @include mixins.title-hover;
           }
         }
         &__link__item {
@@ -118,7 +101,7 @@
         line-clamp: 2;
         overflow: hidden;
         &:hover {
-          @include title-hover;
+          @include mixins.title-hover;
         }
       }
     }
@@ -132,135 +115,135 @@
       height: 181px;
       margin-bottom: 6px;
       &:hover {
-        @include title-hover;
+        @include mixins.title-hover;
       }
 
       &__smallrct {
-        @include smallrct-shadow;
+        @include mixins.light-shadow;
         background: rgba(206, 110, 154, 0.15);
         &__mix1 {
-          @include smallrct-shadow;
+          @include mixins.light-shadow;
           background: rgba(149, 230, 211, 0.15);
         }
         &__mix2 {
-          @include smallrct-shadow;
+          @include mixins.light-shadow;
           background: rgba(244, 184, 189, 0.15);
         }
         &__mix3 {
-          @include smallrct-shadow;
+          @include mixins.light-shadow;
           background: rgba(195, 231, 183, 0.15);
         }
         &__mix4 {
-          @include smallrct-shadow;
+          @include mixins.light-shadow;
           background: rgba(243, 127, 166, 0.15);
         }
         &__mix6 {
-          @include smallrct-shadow;
+          @include mixins.light-shadow;
           background: rgba(160, 190, 200, 0.15);
         }
         &__nirvana {
-          @include smallrct-shadow;
+          @include mixins.light-shadow;
           background: rgba(253, 216, 125, 0.15);
         }
         &__fallout {
-          @include smallrct-shadow;
+          @include mixins.light-shadow;
           background: rgba(212, 178, 169, 0.15);
         }
         &__rockmix {
-          @include smallrct-shadow;
+          @include mixins.light-shadow;
           background: rgba(204, 246, 101, 0.15);
         }
         &__chillmix {
-          @include smallrct-shadow;
+          @include mixins.light-shadow;
           background: rgba(249, 231, 44, 0.15);
         }
         &__popmix {
-          @include smallrct-shadow;
+          @include mixins.light-shadow;
           background: rgba(155, 240, 226, 0.15);
         }
         &__punkmix {
-          @include smallrct-shadow;
+          @include mixins.light-shadow;
           background: rgba(111, 134, 255, 0.15);
         }
         &__happymix {
-          @include smallrct-shadow;
+          @include mixins.light-shadow;
           background: rgba(255, 203, 212, 0.15);
         }
         &__topmix {
-          @include smallrct-shadow;
+          @include mixins.light-shadow;
           background: rgba(255, 198, 104, 0.15);
         }
         &__upbeatmix {
-          @include smallrct-shadow;
+          @include mixins.light-shadow;
           background: rgba(39, 133, 107, 0.15);
         }
         &__60smix {
-          @include smallrct-shadow;
+          @include mixins.light-shadow;
           background: rgba(221, 19, 139, 0.15);
         }
       }
 
       &__bigrct {
-        @include bigrct-shadow;
+        @include mixins.dark-shadow;
         background: rgba(206, 110, 154, 0.3);
         &__mix1 {
-          @include bigrct-shadow;
+          @include mixins.dark-shadow;
           background: rgba(149, 230, 211, 0.3);
         }
         &__mix2 {
-          @include bigrct-shadow;
+          @include mixins.dark-shadow;
           background: rgba(244, 184, 189, 0.3);
         }
         &__mix3 {
-          @include bigrct-shadow;
+          @include mixins.dark-shadow;
           background: rgba(195, 231, 183, 0.3);
         }
         &__mix4 {
-          @include bigrct-shadow;
+          @include mixins.dark-shadow;
           background: rgba(243, 127, 166, 0.3);
         }
         &__mix6 {
-          @include bigrct-shadow;
+          @include mixins.dark-shadow;
           background: rgba(160, 190, 200, 0.3);
         }
         &__nirvana {
-          @include bigrct-shadow;
+          @include mixins.dark-shadow;
           background: rgba(253, 216, 125, 0.3);
         }
         &__fallout {
-          @include bigrct-shadow;
+          @include mixins.dark-shadow;
           background: rgba(212, 178, 169, 0.3);
         }
         &__rockmix {
-          @include bigrct-shadow;
+          @include mixins.dark-shadow;
           background: rgba(204, 246, 101, 0.3);
         }
         &__chillmix {
-          @include bigrct-shadow;
+          @include mixins.dark-shadow;
           background: rgba(249, 231, 44, 0.3);
         }
         &__popmix {
-          @include bigrct-shadow;
+          @include mixins.dark-shadow;
           background: rgba(155, 240, 226, 0.3);
         }
         &__punkmix {
-          @include bigrct-shadow;
+          @include mixins.dark-shadow;
           background: rgba(111, 134, 255, 0.3);
         }
         &__happymix {
-          @include bigrct-shadow;
+          @include mixins.dark-shadow;
           background: rgba(255, 203, 212, 0.3);
         }
         &__topmix {
-          @include bigrct-shadow;
+          @include mixins.dark-shadow;
           background: rgba(255, 198, 104, 0.3);
         }
         &__upbeatmix {
-          @include bigrct-shadow;
+          @include mixins.dark-shadow;
           background: rgba(39, 133, 107, 0.3);
         }
         &__60smix {
-          @include bigrct-shadow;
+          @include mixins.dark-shadow;
           background: rgba(221, 19, 139, 0.3);
         }
       }
@@ -285,14 +268,14 @@
         overflow: hidden;
         text-overflow: ellipsis;
         &:hover {
-          @include title-hover;
+          @include mixins.title-hover;
         }
       }
       span {
         font-weight: 400;
         font-size: 14px;
         &:hover {
-          @include title-hover;
+          @include mixins.title-hover;
         }
       }
     }
@@ -355,7 +338,7 @@
       img {
         border-radius: 50%;
         &:hover {
-          @include title-hover;
+          @include mixins.title-hover;
         }
       }
     }
@@ -387,7 +370,7 @@
           border-radius: 3px;
           padding: 8px 6px 7px 8px;
           &:hover {
-            @include title-hover;
+            @include mixins.title-hover;
           }
         }
       }
@@ -405,7 +388,7 @@
         overflow: hidden;
         text-overflow: ellipsis;
         &:hover {
-          @include title-hover;
+          @include mixins.title-hover;
         }
       }
       .mobile-card-text p {
